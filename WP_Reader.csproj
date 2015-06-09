@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{937023C2-4115-451C-A02F-791DD3138A1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WP_Reader</RootNamespace>
+    <AssemblyName>WP_Reader</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functions\FixedLengthFunctions\AttributeOff.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\AttributeOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CharacterGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\210 %28Column%29\ColumnGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\BottomMarginSet.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\226 %28Formatter%29\FormatterFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\223 %28Box%29\BoxFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\220 %28Decrement Number%29\DecrementNumberFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\218 %28Display Number%29\DisplayNumberFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\Footnote_EndnoteFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\213 %28Cross-Reference%29\Cross_ReferenceFunction.cs" />
+    <Compile Include="Functions\Character.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\208 %28EOL%29\EOLFunction.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\HighlightOn.cs" />
+    <Compile Include="Functions\Function.cs" />
+    <Compile Include="Functions\SingleByteFunction.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\Undo.cs" />
+    <Compile Include="Functions\WP6_DefaultExtendedInternationalCharacters.cs" />
+    <Compile Include="Functions\WPToken.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\ParseVariableLengthFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\216 %28Set Number%29\SetNumberFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\217 %28Numbering Method%29\NumberingMethodFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\219 %28Increment Number%29\IncrementNumberFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\MergeFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\224 %28Tab%29\TabFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\225 %28Platform%29\PlatformFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\ParsePageGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\PageGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\TopMarginSet.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\210 %28Column%29\ParseColumnGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\210 %28Column%29\LeftMarginSet.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\210 %28Column%29\RightMarginSet.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\211 %28Paragraph%29\ParseParagrapghGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\211 %28Paragraph%29\ParagraphGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\211 %28Paragraph%29\SetLineHeight.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\ParseCharacterGroupFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetAlignmentCharacter.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\ParseFixedLengthFunction.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\HighlightOff.cs" />
+    <Compile Include="WP_Reader_Enumerations.cs" />
+    <Compile Include="Document Prefix\DataPacket.cs" />
+    <Compile Include="DocumentArea.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacter.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacterSets.cs" />
+    <Compile Include="Document Prefix\FileHeader.cs" />
+    <Compile Include="Functions\FixedLengthFunctions\FixedLengthFunction.cs" />
+    <Compile Include="WP_Parser.cs" />
+    <Compile Include="Document Prefix\IndexArea.cs" />
+    <Compile Include="Document Prefix\IndexHeader.cs" />
+    <Compile Include="Document Prefix\PacketTypes\GeneralWPText_PacketType.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\FunctionDetail.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\214 %28Header-Footer%29\Header_FooterFunction.cs" />
+    <Compile Include="Functions\WP6_FunctionNames.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\VariableLengthFunction.cs" />
+    <Compile Include="WP6Document.cs" />
+    <Compile Include="Functions\WP6_FunctionKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

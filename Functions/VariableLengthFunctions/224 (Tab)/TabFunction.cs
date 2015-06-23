@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class TabFunction:VariableLengthFunction
+    public class TabFunction:VariableLengthFunction
     {
         public TabFunction(WP6Document doc, int index)
             : base(doc, index)

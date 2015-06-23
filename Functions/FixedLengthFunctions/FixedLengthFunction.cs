@@ -26,6 +26,7 @@ namespace WP_Reader
             _index = index;
             _data = document.data;
             name = FixedLengthGroup.none;
+            functionGroup = functionGroups.fixedLength;
             parseFunction();
         }
 

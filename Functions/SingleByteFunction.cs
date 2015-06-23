@@ -10,7 +10,7 @@ namespace WP_Reader
     {
         public SingleByteFunction(byte[] data, int index)
         {
-            if (index < 180)
+            if (data[index] < 180)
             {
                 functionGroup = functionGroups.singleByte;
             }

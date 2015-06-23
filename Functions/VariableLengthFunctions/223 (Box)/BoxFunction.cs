@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class BoxFunction:VariableLengthFunction
+    public class BoxFunction:VariableLengthFunction
     {
         public BoxFunction(WP6Document doc, int index): base (doc, index)
         {

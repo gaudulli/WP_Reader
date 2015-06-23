@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class DisplayNumberFunction: VariableLengthFunction
+    public class DisplayNumberFunction: VariableLengthFunction
     {
         public DisplayNumberFunction(WP6Document doc, int index)
             : base(doc, index)

@@ -52,8 +52,6 @@ namespace WP_Reader
                     return new PlatformFunction(doc, index);
                 case functionGroups.formatter:
                     return new FormatterFunction(doc, index);
-                case functionGroups.fixedLength:
-                    break;
             }
         
             return null;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class FormatterFunction:VariableLengthFunction
+    public class FormatterFunction:VariableLengthFunction
     {
         public FormatterFunction(WP6Document doc, int index)
             : base(doc, index)

@@ -33,26 +33,27 @@ public enum functionGroups
     
 }
 
-public enum Attribute
+
+public enum WPAttribute
 {
-    extra_large = 0,
-    very_large,
-    large,
-    small_print,
-    fine_print,
-    superscript,
-    subscript,
-    outline,
-    italics,
-    shadow,
-    redline,
-    double_underline,
-    bold,
-    strikeout,
-    underline,
-    small_caps,
-    blink,
-    reverse_video
+    extra_large = 0 ,
+    very_large  = 1,
+    large = 2,
+    small_print = 3,
+    fine_print = 4,
+    superscript = 5,
+    subscript = 6,
+    outline = 7,
+    italics = 8,
+    shadow = 9,
+    redline = 10,
+    double_underline = 11,
+    bold = 12,
+    strikeout = 13,
+    underline = 14,
+    small_caps = 15,
+    blink = 16,
+    reverse_video = 17
 }
 
 [Flags()]

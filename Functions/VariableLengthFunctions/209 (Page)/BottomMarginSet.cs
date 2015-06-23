@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class BottomMarginSet: PageGroupFunction
+    public class BottomMarginSet: PageGroupFunction
     {
 
        public short bottomMargin {get; set;}  //measurement in WPUs

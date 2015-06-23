@@ -8,7 +8,7 @@ namespace WP_Reader
 {
     public class Function : WPToken
     {
-        public Enum name { get; set; }
+       // public Enum name { get; set; }
 
         public Function(WP6Document doc, int index)
             : base(doc, index)

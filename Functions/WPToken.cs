@@ -8,6 +8,7 @@ namespace WP_Reader
 {
     public class WPToken
     {
+        public Enum name { get; set; }
         public functionGroups functionGroup { get; set; }
 
         public WPToken(WP6Document doc, int index)

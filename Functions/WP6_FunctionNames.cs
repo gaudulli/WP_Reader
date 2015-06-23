@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WP_Reader
 {
-    static class WP6_FunctionNames
+    public static class WP6_FunctionNames
     {
         public static Dictionary<WP6_FunctionKey, Enum > map;
         static  WP6_FunctionNames()

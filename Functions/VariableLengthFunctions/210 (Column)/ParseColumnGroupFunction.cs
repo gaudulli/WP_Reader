@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class ParseColumnGroupFunction
+    public class ParseColumnGroupFunction
     {
 
         public static ColumnGroupFunction getFunction(WP6Document doc, int index)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class Header_FooterFunction: VariableLengthFunction
+    public class Header_FooterFunction: VariableLengthFunction
     {
         public GeneralWPText_PacketType content { get; set; }
 

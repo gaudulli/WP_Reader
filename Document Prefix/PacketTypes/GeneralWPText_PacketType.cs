@@ -8,7 +8,7 @@ namespace WP_Reader
 {
     // Parses Packet Type 8, WP General Text
     // The text of each block is returned as a parsed DocumentArea
-    class GeneralWPText_PacketType
+    public class GeneralWPText_PacketType
     {
         public int numTextBlocks { get; set; }
         public int firstBlockOffset { get; set; }

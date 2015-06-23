@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WP_Reader
 {    
-    class WP6_FunctionKey {
+    public class WP6_FunctionKey {
         public byte group;
         public byte subgroup;
 

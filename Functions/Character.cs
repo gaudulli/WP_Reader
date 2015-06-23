@@ -12,7 +12,7 @@ namespace WP_Reader
 
         public Character(byte[] data, int index)
         {
-            functionGroup = functionGroups.character;
+            functionGroup = functionGroups.textCharacter;
             content = ((char)data[index]).ToString();
         }
 

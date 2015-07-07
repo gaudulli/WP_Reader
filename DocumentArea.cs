@@ -106,16 +106,5 @@ namespace WP_Reader
         }
 
 
-        public override string ToString()
-        {
-
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendLine("DocumentArea: ");
-            sb.AppendLine("\tData[0]: " + data[0]);
-            sb.AppendLine("\tData[" + (data.Length - 1) + "]: " + data[data.Length - 1]);
-
-            return sb.ToString();
-        }
-    }
+     }
 }

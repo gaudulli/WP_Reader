@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WP_Reader
 {
-    static class ExtendedCharacterSets
+    public static class ExtendedCharacterSets
     {
 
    /* WP6 Extended Character -> Unicode (UCS4) Mappings by Ariya Hidayat <ariyahidayat@yahoo.de> for the

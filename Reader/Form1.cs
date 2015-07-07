@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using WP_Reader;
+
 namespace Reader
 {
     public partial class Form1 : Form
     {
+
+        WP6Document doc;
         public Form1()
         {
             InitializeComponent();
@@ -40,8 +44,9 @@ namespace Reader
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             string path = textBox1.Text;
+             doc = new WP6Document(path);
+
             this.Close();
 
         }

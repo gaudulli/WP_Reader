@@ -483,3 +483,21 @@ public enum SingleByteGroup
     none
 }
 
+
+public enum WP6_Character_Sets
+{
+    multinational = 1,
+    phonetic,
+    box_drawing,
+    typographic_symbols,
+    iconic_symbols,
+    math_scientific,
+    math_scientific_extended,
+    Greek,
+    Hebrew,
+    Cyrillic,
+    Japanese,
+    Arabic = 13,
+    Arabic_script
+}
+

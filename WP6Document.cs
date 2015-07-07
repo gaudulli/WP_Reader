@@ -30,7 +30,7 @@ namespace WP_Reader
             }
             documentArea = new DocumentArea(this);
 
-            writeWPStreamToFile(documentArea.WPStream, URL);
+            //writeWPStreamToFile(documentArea.WPStream, URL);
             //writeMapToFile(WP6_FunctionNames.map);
             //writeToFile(data);
 
@@ -80,7 +80,7 @@ namespace WP_Reader
                 }
             }
           
-           //File.WriteAllText(URL + "WPStream.txt", sb.ToString());
+           File.WriteAllText(URL + "WPStream.txt", sb.ToString());
         }
 
 

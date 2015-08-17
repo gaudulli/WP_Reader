@@ -11,8 +11,6 @@ namespace WP_Reader
         public int size { get; set; }
         public byte[] functionData { get; set; }
 
-        //private FixedLengthGroup _name { get; set; }    //need an established enum to use in a switch method
-
         protected WP6Document document;
 
         private int _index;

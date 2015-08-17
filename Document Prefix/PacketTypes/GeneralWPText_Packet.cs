@@ -8,32 +8,14 @@ namespace WP_Reader
 {
     // Parses Packet Type 8, WP General Text
     // The text of each block is returned as a parsed DocumentArea
-    public class GeneralWPText_PacketType
+    public class GeneralWPText_Packet: PacketData
     {
-        public int numTextBlocks { get; set; }
-        public int firstBlockOffset { get; set; }
-        public int[] sizeofBlock { get; set; }
         public DocumentArea[] packetText { get; set; }
 
-        private IndexArea indexArea;
-        private byte[] _data;
 
-        public GeneralWPText_PacketType(WP6Document document, int prefixID)
+        public GeneralWPText_Packet(WP6Document document, int prefixID): 
+            base (document, prefixID)
         {
-            _data = document.data;
-            indexArea = document.indexAreas[prefixID];
-
-            int index = indexArea.dataPacketPointer;
-            numTextBlocks = BitConverter.ToInt16(_data, index);
-            index += 2;
-            firstBlockOffset = BitConverter.ToInt32(_data, index);
-            index += 4;
-            sizeofBlock = new int[numTextBlocks];
-            for (int i=0; i<sizeofBlock.Length; i++)
-            {
-                sizeofBlock[i] = BitConverter.ToInt32(_data, index);
-                index += 4;
-            }
             packetText = new DocumentArea[numTextBlocks];
             for (int i = 0; i < numTextBlocks; i++)
             {

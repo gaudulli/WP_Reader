@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    public class StyleFunction :VariableLengthFunction
+    public class StyleEndOff:StyleGroupFunction
     {
-        public StyleFunction(WP6Document doc, int index)
+          public StyleEndOff(WP6Document doc, int index)
             : base(doc, index)
         {
-            // No special coding needed yet for style functions
+
         }
     }
 }

@@ -18,11 +18,22 @@ namespace WP_Reader
         public ExtendedCharacter(WP6Document doc, int index, int size)
             : base(doc, index, size)
         {
+            parseCharacter();
+        }
 
+        public ExtendedCharacter(byte charSet, byte offset)
+        {
+            functionData = new byte[2];
+            functionData[1] = charSet;
+            functionData[0] = offset;
+            parseCharacter();
+        }
+
+        private void parseCharacter()
+        {
             name = FixedLengthGroup.extended_character;
             charNumber = functionData[0];
             charset = (WP6_Character_Sets)Enum.Parse(typeof(WP6_Character_Sets), functionData[1].ToString());
-
             switch (charset)
             {
                 case WP6_Character_Sets.multinational:
@@ -54,10 +65,10 @@ namespace WP_Reader
                         content = new string((char)ExtendedCharacterSets.WP6_typographic_symbols[charNumber], 1);
                     }
                     else
-                        //handle number beyond 0xFFFF, different plane; need two values to map
+                    //handle number beyond 0xFFFF, different plane; need two values to map
                     {
                         content = char.ConvertFromUtf32(ExtendedCharacterSets.WP6_typographic_symbols[charNumber]).ToString();
-                        
+
                     }
 
                     break;
@@ -92,7 +103,6 @@ namespace WP_Reader
                     content = "";
                     break;
             }
-
 
         }
 

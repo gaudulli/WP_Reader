@@ -41,7 +41,7 @@ namespace WP_Reader
                 case functionGroups.decrement_number:
                     return new DecrementNumberFunction(doc, index);
                 case functionGroups.style:
-                    return new StyleFunction(doc, index);
+                    return ParseStyleGroupFunction.getFunction(doc, index);
                 case functionGroups.merge:
                     return new MergeFunction(doc, index);
                 case functionGroups.box:

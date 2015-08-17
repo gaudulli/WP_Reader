@@ -68,6 +68,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Bookmark.cs" />
+    <Compile Include="Document Prefix\PacketTypes\BookmarkDataPacket.cs" />
     <Compile Include="Functions\FixedLengthFunctions\AttributeOff.cs" />
     <Compile Include="Functions\FixedLengthFunctions\AttributeOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CharacterGroupFunction.cs" />
@@ -88,7 +90,7 @@
     <Compile Include="Functions\WP6_DefaultExtendedInternationalCharacters.cs" />
     <Compile Include="Functions\WPToken.cs" />
     <Compile Include="Functions\VariableLengthFunctions\ParseVariableLengthFunction.cs" />
-    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleGroupFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\216 %28Set Number%29\SetNumberFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\217 %28Numbering Method%29\NumberingMethodFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\219 %28Increment Number%29\IncrementNumberFunction.cs" />
@@ -108,6 +110,27 @@
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetAlignmentCharacter.cs" />
     <Compile Include="Functions\FixedLengthFunctions\ParseFixedLengthFunction.cs" />
     <Compile Include="Functions\FixedLengthFunctions\HighlightOff.cs" />
+    <Compile Include="Document Prefix\PacketTypes\NativeFileNamePacket.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\HypertextBeginOn.cs" />
+    <Compile Include="Document Prefix\PacketTypes\HypertextBookmarkNamePacket.cs" />
+    <Compile Include="Document Prefix\PacketData.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\HypertextBeginOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\HypertextEndOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\HypertextEndOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParseStyleGroupFunction.cs" />
+    <Compile Include="Document Prefix\PacketTypes\NormalStylePacket.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleBeginOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleBeginOn_Part1.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleBeginOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleEndOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\StyleEndOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleBeginOff_Part1.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleBeginOn_Part2.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleBeginOff_Part2.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleEndOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleEndOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOff.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="Document Prefix\DataPacket.cs" />
     <Compile Include="DocumentArea.cs" />
@@ -118,7 +141,7 @@
     <Compile Include="WP_Parser.cs" />
     <Compile Include="Document Prefix\IndexArea.cs" />
     <Compile Include="Document Prefix\IndexHeader.cs" />
-    <Compile Include="Document Prefix\PacketTypes\GeneralWPText_PacketType.cs" />
+    <Compile Include="Document Prefix\PacketTypes\GeneralWPText_Packet.cs" />
     <Compile Include="Functions\VariableLengthFunctions\FunctionDetail.cs" />
     <Compile Include="Functions\VariableLengthFunctions\214 %28Header-Footer%29\Header_FooterFunction.cs" />
     <Compile Include="Functions\WP6_FunctionNames.cs" />

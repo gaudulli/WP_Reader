@@ -342,10 +342,10 @@ public enum DecrementNumberGroup
 
 public enum StyleGroup
 {
-    begin_on,
-    begin_off,
-    end_on,
-    end_off,
+    style_begin_on,
+    style_begin_off,
+    style_end_on,
+    style_end_off,
     paragraph_style_begin_on_part_1,
     paragraph_style_begin_off_part_1,
     paragraph_style_begin_on_part_2,
@@ -499,5 +499,16 @@ public enum WP6_Character_Sets
     Japanese,
     Arabic = 13,
     Arabic_script
+}
+
+// used in index area to specify structure of packets
+[Flags]
+public enum IndexFlags
+{
+    childPacketIDs = 1,
+    WP_character_set_mapped_text = 2,
+    valid_use_count_is_1 = 4,   //no idea what this bit is supposed to do...
+    conditional_valid_use_count_is_1 = 8    // or this one
+
 }
 

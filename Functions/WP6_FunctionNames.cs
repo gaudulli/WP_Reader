@@ -343,10 +343,10 @@ namespace WP_Reader
         { map.Add(new WP6_FunctionKey(0xDC, (byte)i), DecrementNumberGroup.decrement_number); }
 
         //221 Style Group
-        map.Add(new WP6_FunctionKey(0xDD, 0), StyleGroup.begin_on);
-        map.Add(new WP6_FunctionKey(0xDD, 1), StyleGroup.begin_off);
-        map.Add(new WP6_FunctionKey(0xDD, 2), StyleGroup.end_on);
-        map.Add(new WP6_FunctionKey(0xDD, 3), StyleGroup.end_off);
+        map.Add(new WP6_FunctionKey(0xDD, 0), StyleGroup.style_begin_on);
+        map.Add(new WP6_FunctionKey(0xDD, 1), StyleGroup.style_begin_off);
+        map.Add(new WP6_FunctionKey(0xDD, 2), StyleGroup.style_end_on);
+        map.Add(new WP6_FunctionKey(0xDD, 3), StyleGroup.style_end_off);
         map.Add(new WP6_FunctionKey(0xDD, 4), StyleGroup.paragraph_style_begin_on_part_1);
         map.Add(new WP6_FunctionKey(0xDD, 5), StyleGroup.paragraph_style_begin_off_part_1);
         map.Add(new WP6_FunctionKey(0xDD, 6), StyleGroup.paragraph_style_begin_on_part_2);

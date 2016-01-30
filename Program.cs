@@ -9,10 +9,8 @@ namespace WP_Reader {
 
             Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-            string TestingURL = "\\\\lcsvs\\lcs\\LCS\\lcsshare\\NMLegisDrafter\\TestDocs\\";
-            //string FileName = "\\TestDocs\\31-18-17.wpd";
-            //string FileName = "\\TestDocs\\hyphentest.wpd";
-            //string FileName = "\\TestDocs\\31-18-17.wpd";
+            // used for testing only
+            string TestingURL = "";
             string FileName = "WPReaderTest.wpd";
 
             WP6Document doc = new WP6Document(TestingURL + FileName);

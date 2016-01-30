@@ -84,7 +84,6 @@ namespace WP_Reader
                 else if (data[index] > 207 && data[index] < 227)
                 {
                     VariableLengthFunction function = ParseVariableLengthFunction.getfunction(document, index);
-                    //VariableLengthFunction function = new VariableLengthFunction(data, index);
                     index += function.size;
                     if (!function.name.Equals(functionGroups.none))
                     {

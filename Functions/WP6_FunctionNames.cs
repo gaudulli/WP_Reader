@@ -211,8 +211,8 @@ namespace WP_Reader
         map.Add(new WP6_FunctionKey(0xD4, 23), CharacterGroup.block_on_off);
         map.Add(new WP6_FunctionKey(0xD4, 24), CharacterGroup.color);
         map.Add(new WP6_FunctionKey(0xD4, 25), CharacterGroup.character_shading_change);
-        map.Add(new WP6_FunctionKey(0xD4, 26), CharacterGroup.font_face_change);
-        map.Add(new WP6_FunctionKey(0xD4, 27), CharacterGroup.font_size_change);
+        map.Add(new WP6_FunctionKey(0xD4, 26), CharacterGroup.font_face_change);    // 6868
+        map.Add(new WP6_FunctionKey(0xD4, 27), CharacterGroup.font_size_change);    // 7124
         map.Add(new WP6_FunctionKey(0xD4, 28), CharacterGroup.set_language);
         map.Add(new WP6_FunctionKey(0xD4, 29), CharacterGroup.comment);
         map.Add(new WP6_FunctionKey(0xD4, 30), CharacterGroup.set_dot_leader_characters);
@@ -371,30 +371,30 @@ namespace WP_Reader
         //224 Tab Group
         // tab subgroup is based on bit flags, but not all combinations are possible
         // TODO investigate vertical bar tabs--do they really exist?
-        map.Add(new WP6_FunctionKey(0xE0, 0), TabGroup.hard_back_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 16), TabGroup.hard_left_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 17), TabGroup.left_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 18), TabGroup.hard_left_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 19), TabGroup.left_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 48), TabGroup.hard_left_ind);
-        map.Add(new WP6_FunctionKey(0xE0, 56), TabGroup.hard_left_right_ind);
-        map.Add(new WP6_FunctionKey(0xE0, 64), TabGroup.hard_center_on_mar);
-        map.Add(new WP6_FunctionKey(0xE0, 66), TabGroup.hard_center_on_mar_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 72), TabGroup.hard_center_on_pos);
-        map.Add(new WP6_FunctionKey(0xE0, 80), TabGroup.hard_center_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 81), TabGroup.center_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 82), TabGroup.hard_center_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 83), TabGroup.center_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 128), TabGroup.hard_flush_right);
-        map.Add(new WP6_FunctionKey(0xE0, 130), TabGroup.hard_flush_right_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 144), TabGroup.hard_right_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 145), TabGroup.right_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 146), TabGroup.hard_right_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 147), TabGroup.right_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 208), TabGroup.hard_dec_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 209), TabGroup.dec_tab);
-        map.Add(new WP6_FunctionKey(0xE0, 210), TabGroup.hard_dec_tab_DL);
-        map.Add(new WP6_FunctionKey(0xE0, 211), TabGroup.dec_tab_DL); 
+        map.Add(new WP6_FunctionKey(0xE0, 0), TabGroup.hard_back_tab);      //224
+        map.Add(new WP6_FunctionKey(0xE0, 16), TabGroup.hard_left_tab);     //4320
+        map.Add(new WP6_FunctionKey(0xE0, 17), TabGroup.left_tab);          // 4576
+        map.Add(new WP6_FunctionKey(0xE0, 18), TabGroup.hard_left_tab_DL);  //4832
+        map.Add(new WP6_FunctionKey(0xE0, 19), TabGroup.left_tab_DL);       //5088
+        map.Add(new WP6_FunctionKey(0xE0, 48), TabGroup.hard_left_ind);     //12512
+        map.Add(new WP6_FunctionKey(0xE0, 56), TabGroup.hard_left_right_ind);   //14560
+        map.Add(new WP6_FunctionKey(0xE0, 64), TabGroup.hard_center_on_mar);    //16608
+        map.Add(new WP6_FunctionKey(0xE0, 66), TabGroup.hard_center_on_mar_DL); //17120
+        map.Add(new WP6_FunctionKey(0xE0, 72), TabGroup.hard_center_on_pos);    //18656
+        map.Add(new WP6_FunctionKey(0xE0, 80), TabGroup.hard_center_tab);       //20704
+        map.Add(new WP6_FunctionKey(0xE0, 81), TabGroup.center_tab);            //20960
+        map.Add(new WP6_FunctionKey(0xE0, 82), TabGroup.hard_center_tab_DL);    //21216
+        map.Add(new WP6_FunctionKey(0xE0, 83), TabGroup.center_tab_DL);         //21472
+        map.Add(new WP6_FunctionKey(0xE0, 128), TabGroup.hard_flush_right);     //32992
+        map.Add(new WP6_FunctionKey(0xE0, 130), TabGroup.hard_flush_right_DL);  //33504
+        map.Add(new WP6_FunctionKey(0xE0, 144), TabGroup.hard_right_tab);       //37088
+        map.Add(new WP6_FunctionKey(0xE0, 145), TabGroup.right_tab);            //37344
+        map.Add(new WP6_FunctionKey(0xE0, 146), TabGroup.hard_right_tab_DL);    //37600
+        map.Add(new WP6_FunctionKey(0xE0, 147), TabGroup.right_tab_DL);         //37856
+        map.Add(new WP6_FunctionKey(0xE0, 208), TabGroup.hard_dec_tab);         //53472
+        map.Add(new WP6_FunctionKey(0xE0, 209), TabGroup.dec_tab);              //53728
+        map.Add(new WP6_FunctionKey(0xE0, 210), TabGroup.hard_dec_tab_DL);      //53984
+        map.Add(new WP6_FunctionKey(0xE0, 211), TabGroup.dec_tab_DL);           //54240
             
         //225 Platform Group
         //Skip over all platform functions; just fill in a blank reference in case code appears in document.

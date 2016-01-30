@@ -22,6 +22,7 @@ namespace WP_Reader {
         }
 
         public void parseIndexArea(byte[] data, int startIndex) {
+
             flags = (IndexFlags)data[startIndex];
             packetType = data[startIndex + 1];
             packetUseCount = BitConverter.ToInt16(data, startIndex + 2);

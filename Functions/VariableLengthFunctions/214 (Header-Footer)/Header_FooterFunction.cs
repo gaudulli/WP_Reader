@@ -13,6 +13,8 @@ namespace WP_Reader
         public Header_FooterFunction(WP6Document doc, int index)
             : base(doc, index)
         {
+
+            
             // for now, ignore the possible second prefixID (user assistant)
             if (prefixIds[0] > 0)
             {

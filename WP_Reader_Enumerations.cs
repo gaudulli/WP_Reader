@@ -289,6 +289,7 @@ public enum CharacterGroup
     none
 }
 
+// groups that just have the name of the group have not been expanded yet
 public enum CrossReferenceGroup
 {
     cross_reference

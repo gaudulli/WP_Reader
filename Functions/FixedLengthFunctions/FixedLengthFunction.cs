@@ -40,7 +40,7 @@ namespace WP_Reader
             functionData = new byte[sizeFunctionData];
             for (int i = 0; i < sizeFunctionData; i++)
             {
-                //needs work to finish
+
                 functionData[i] = _data[_index];
                 _index++;
             }

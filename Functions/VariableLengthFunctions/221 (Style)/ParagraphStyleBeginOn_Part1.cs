@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    class ParagraphStyleBeginOn_Part1: StyleGroupFunction
+    public class ParagraphStyleBeginOn_Part1: StyleGroupFunction
     {
         public NormalStylePacket info { get; set; }
         public int hash { get; set; }

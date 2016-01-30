@@ -13,12 +13,14 @@ namespace WP_Reader
         public Character(byte[] data, int index)
         {
             functionGroup = functionGroups.textCharacter;
+            name = functionGroups.none;
             content = ((char)data[index]).ToString();
         }
 
         public Character(string _content)
         {
             functionGroup = functionGroups.character;
+            name = functionGroups.none;
             content = _content;
         }
 

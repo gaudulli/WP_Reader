@@ -172,7 +172,55 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="WP File Format\ChartStylesAndData.htm" />
+    <Content Include="WP File Format\Qp9f4fml.htm" />
+    <Content Include="WP File Format\qpff_0x0000-0x03ff_global.htm" />
+    <Content Include="WP File Format\qpff_0x0400-0x05ff_notebook.htm" />
+    <Content Include="WP File Format\qpff_0x0600-0x0ff_sheet.htm" />
+    <Content Include="WP File Format\qpff_0x0a00-0x0bff_column.htm" />
+    <Content Include="WP File Format\qpff_0x0c00-0x0dff_cell.htm" />
+    <Content Include="WP File Format\qpff_Index.htm" />
+    <Content Include="WP File Format\qpff_introduction.htm" />
+    <Content Include="WP File Format\qpff_types.htm" />
+    <Content Include="WP File Format\WPFF_D0-EOL.htm" />
+    <Content Include="WP File Format\WPFF_D1-Page.htm" />
+    <Content Include="WP File Format\WPFF_D2-Column.htm" />
+    <Content Include="WP File Format\WPFF_D3-Paragraph.htm" />
+    <Content Include="WP File Format\WPFF_D4-Character.htm" />
+    <Content Include="WP File Format\WPFF_D5-CrossReference.htm" />
+    <Content Include="WP File Format\WPFF_D6-HeaderFooter.htm" />
+    <Content Include="WP File Format\WPFF_D7-FootnoteEndNote.htm" />
+    <Content Include="WP File Format\WPFF_D8-SetNumber.htm" />
+    <Content Include="WP File Format\WPFF_D9-Numbering.htm" />
+    <Content Include="WP File Format\WPFF_DA-DisplayNumber.htm" />
+    <Content Include="WP File Format\WPFF_DB-IncrementNumber.htm" />
+    <Content Include="WP File Format\WPFF_DC-DecrementNumber.htm" />
+    <Content Include="WP File Format\WPFF_DD-Style.htm" />
+    <Content Include="WP File Format\WPFF_DE-Merge.htm" />
+    <Content Include="WP File Format\WPFF_DF-BOX.htm" />
+    <Content Include="WP File Format\WPFF_DocumentStructure.htm" />
+    <Content Include="WP File Format\WPFF_E0-Tab.htm" />
+    <Content Include="WP File Format\WPFF_E1-Platform.htm" />
+    <Content Include="WP File Format\WPFF_E2-Formatter.htm" />
+    <Content Include="WP File Format\WPFF_efilsys.htm" />
+    <Content Include="WP File Format\WPFF_Index.htm" />
+    <Content Include="WP File Format\WPFF_PrefixPkt0-32.htm" />
+    <Content Include="WP File Format\WPFF_PrefixPkt33-64.htm" />
+    <Content Include="WP File Format\WPFF_PrefixPkt65-82.htm" />
+    <Content Include="WP File Format\WPFF_PrefixPkt83-255.htm" />
+    <Content Include="WP File Format\WPFF_SingleByte.htm" />
+    <Content Include="WP File Format\WPFF_TableFormulas.htm" />
+    <Content Include="WP File Format\WPFF_xFixedLength.htm" />
+    <Content Include="WP File Format\WPFormat.htm" />
+    <Content Include="WP File Format\WPGeneric.htm" />
+    <Content Include="WP File Format\WPGFF_0_Overview.htm" />
+    <Content Include="WP File Format\WPGFF_1_RecordDescriptions.htm" />
+    <Content Include="WP File Format\WPGFF_2_Styles_Objects.htm" />
+    <Content Include="WP File Format\WPGFF_3_Text_Defaults.htm" />
+    <Content Include="WP File Format\WPGFF_Toc.htm" />
+    <Content Include="WP File Format\wpmerge.htm" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

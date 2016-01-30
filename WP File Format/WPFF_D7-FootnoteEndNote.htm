@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <link rel="stylesheet" href="../main.css" type="text/css" />
+    <title>WordPerfect File Format</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <table border="0" width="100%" class="index">
+                <tr>
+                    <td width="23">
+                        <a href="WPFF_D6-HeaderFooter.htm">
+                            <img alt="Previous Document" src="../images/prev.gif" width="18" height="18" /></a></td>
+                    <td width="23">
+                        <a href="../Core/SDK_TOC.html">
+                            <img alt="Table Of Contents" src="../images/BtnBacktoTop.gif" width="18" height="18" /></a></td>
+                    <td width="23">
+                        <a href="WPFF_D8-SetNumber.htm">
+                            <img alt="Next Document" src="../images/next.gif" width="18" height="18" /></a></td>
+                    <td>
+
+                        <p>
+                            <a href="WPFF_Index.htm">WordPerfect File Format</a> : Variable-Length Multi-Byte Functions: D7 Footnote/Endnote Functions</p>
+
+                    </td>
+                </tr>
+            </table>
+            <hr />
+        </div>
+        <div id="body">
+
+            <h1>
+                WordPerfect File Format</h1>
+
+            <h2>
+                Variable-Length Multi-Byte Functions: D7 Footnote/Endnote Functions</h2>
+
+            <p>
+                <strong>Footnote/Endnote Group - Function 215 (0xD7)</strong></p>
+
+            <p>
+                The Footnote/Endnote Group subfunctions have character orientation.</p>
+
+            <p>
+                The subfunctions in this list are paired so that the even-numbered codes are the On functions and the odd numbered codes are the Off functions. Each instance of
+                a subfunction will consist of the On subfunction, the associated information, and the Off subfunction.</p>
+
+            <hr />
+
+            <h3>
+                0xD700</h3>
+
+            <p>
+                <strong>Footnote On</strong></p>
+
+            <pre>
+&lt;215 (0xD7)&gt; &lt;0 (0x00)&gt; [size = variable] &lt;flags = PRFXID+3 (encased function)&gt;
+  &lt;number of PIDs&gt;
+    1 = 0x08 - always exists
+    2 = 0x5B - can exist as second prefix
+  [footnote text PID (type=0x08)]
+  [User Assistant (type=0x5B)] - optional prefix if PIDs is set to 2
+[size of non-deletable information = 0]
+&lt;undocumented deletable data&gt; x ?
+[size] &lt;0xD7&gt;
+</pre>
+
+            <hr />
+
+            <h3>
+                0xD701</h3>
+
+            <p>
+                <strong>Footnote Off</strong></p>
+
+            <pre>
+&lt;215 (0xD7)&gt; &lt;1 (0x01)&gt; [size = 10] &lt;flags = 3 (encased function)&gt;
+[size of non-deletable information = 0]
+[size] &lt;0xD7&gt;
+</pre>
+
+            <hr />
+
+            <h3>
+                0xD702</h3>
+
+            <p>
+                <strong>Endnote On</strong></p>
+
+            <pre>
+&lt;215 (0xD7)&gt; &lt;2 (0x02)&gt; [size = 13] &lt;flags = PRFXID+3 (encased function)&gt;
+  &lt;number of PIDs&gt;
+    1 = 0x08 - always exists
+    2 = 0x5B - can exist as second prefix
+  [endnote text PID (type=0x08)]
+  [User Assistant (type=0x5B)] - optional prefix if PIDs is set to 2
+[size of non-deletable information = 0]
+[size] &lt;0xD7&gt;
+</pre>
+
+            <hr />
+
+            <h3>
+                0xD703</h3>
+
+            <p>
+                <strong>Endnote Off</strong></p>
+
+            <pre>
+&lt;215 (0xD7)&gt; &lt;3 (0x03)&gt; [size = 10] &lt;flags = 3 (encased function)&gt;
+[size of non-deletable information = 0]</pre>
+
+            <p>
+                WP for DOS has the following variances:</p>
+
+            <pre>&lt;215 (0xD7)&gt; &lt;2 (0x02)&gt; [size = 14] &lt;flags = PRFXID + 3 (encased function)&gt;
+  &lt;number of PIDs = 1&gt;
+  [endnote text PID (type=0x08)]
+[size of non-deletable information = 1]
+&lt;0x00&gt;
+[size] &lt;0xD7&gt;
+</pre>
+
+        </div>
+        <div id="footer">
+
+            <p class="copyright">
+                Copyright 2014 Corel Corporation. All Rights Reserved.</p>
+
+        </div>
+    </div>
+</body>
+</html>

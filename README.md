@@ -27,6 +27,16 @@ Functions that have been mapped:
     
     
 All functions contain the byte representation of the function, plus any relevant information modeled in the appropriate C# type
-For example, the bottomMargin function contains a variable number of bytes, which follow a specified pattern.  The "useful" information is actually the number of WordPerfect Units (WPUs) that are set in that function, which in this case is the short bottomMargin.
+For example, the bottomMargin function contains a variable number of bytes, which follow a specified pattern.  The "useful" information is actually the number of WordPerfect Units (WPUs) that are set in that function, which in this case is the short bottomMargin.  
+
+WP_Reader is accessible from an outside application by instantiating a WP6Document, which will return the model of the file:
+
+```C#
+string url = "whatever/path/file.wpd" //(or .wpt)
+WP6Document doc = new WP6Document(url);
+```
  
+The document being accessed cannot be currently open in WordPerfect (or any other application), because Windows throws a fit when that happens.
+
+The main useful property (for reading a document) in the WP6Document is `documentArea`.  This contains the actual document.  The other properties are accessed by the particular function that stores its data in the IndexArea(s).  For example, the WP function `bookmark` has its useful information stored in one of the IndexAreas as a Prefix Packet.   The C# class `bookmark` in WP_Reader has methods to access and extract this information.
     

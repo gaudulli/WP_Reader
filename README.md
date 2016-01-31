@@ -1,7 +1,7 @@
 # WP_Reader
 Library to parse WordPerfect documents in the WP6x file format.
 
-Models a WordPerfect document in the class WP6Document, which include FileHeader, IndexHeader, IndexArea[] and DocumentArea.
+Models a WordPerfect document in the class WP6Document, which include `fileHeader`, `indexHeader`, `indexArea[]` and `documentArea`.  
 DocumentArea consists of a list of WPTokens called WPStream, which can then be accessed.
 WPToken is a class that models every character and function in a WordPerfect document.
 

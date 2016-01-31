@@ -26,7 +26,7 @@ Functions that have been mapped:
         Tab Group
     
     
-All functions contain the byte representation of the function, plus any relevant information modeled in the appropriate C# type
+All functions contain the byte representation of the WP function, plus any relevant information modeled in the appropriate C# type.  
 For example, the `bottomMargin` function contains a variable number of bytes, which follow a specified pattern.  The "useful" information is actually the number of WordPerfect Units (WPUs) that are set in that function, which in this case is the `short bottomMargin`.  
 
 WP_Reader is accessible from an outside application by instantiating a WP6Document, which will return the model of the file:

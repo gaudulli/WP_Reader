@@ -9,15 +9,16 @@ namespace WP_Reader {
         public byte flags { get; set; }
         public int indexCount { get; set; }
 
-
-
-        public IndexHeader(byte[] data, int startIndex) {
+        public IndexHeader(byte[] data, int startIndex)
+        {
             parseIndexHeader(data, startIndex);
         }
+
         public void parseIndexHeader(byte[] data, int startIndex){
             flags = data[startIndex];
             indexCount = BitConverter.ToUInt16(data,startIndex+2);
         }
+
 
         public override string ToString() {
             StringBuilder sb = new StringBuilder();

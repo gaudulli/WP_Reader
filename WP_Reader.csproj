@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Bookmark.cs" />
-    <Compile Include="Document Prefix\PacketTypes\BookmarkDataPacket.cs" />
+    <Compile Include="Document Prefix\PacketTypes\BookmarkPacket.cs" />
     <Compile Include="Functions\FixedLengthFunctions\AttributeOff.cs" />
     <Compile Include="Functions\FixedLengthFunctions\AttributeOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CharacterGroupFunction.cs" />
@@ -131,18 +131,17 @@
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\ParagraphStyleEndOff.cs" />
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOff.cs" />
+    <Compile Include="Document Prefix\IndexArea.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
-    <Compile Include="Document Prefix\DataPacket.cs" />
     <Compile Include="DocumentArea.cs" />
     <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacter.cs" />
     <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacterSets.cs" />
     <Compile Include="Document Prefix\FileHeader.cs" />
     <Compile Include="Functions\FixedLengthFunctions\FixedLengthFunction.cs" />
     <Compile Include="WP_Parser.cs" />
-    <Compile Include="Document Prefix\IndexArea.cs" />
+    <Compile Include="Document Prefix\Index.cs" />
     <Compile Include="Document Prefix\IndexHeader.cs" />
     <Compile Include="Document Prefix\PacketTypes\GeneralWPText_Packet.cs" />
-    <Compile Include="Functions\VariableLengthFunctions\FunctionDetail.cs" />
     <Compile Include="Functions\VariableLengthFunctions\214 %28Header-Footer%29\Header_FooterFunction.cs" />
     <Compile Include="Functions\WP6_FunctionNames.cs" />
     <Compile Include="Program.cs" />

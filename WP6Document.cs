@@ -9,8 +9,8 @@ namespace WP_Reader
     public class WP6Document
     {
         public FileHeader fileHeader { get; set; }
-        public IndexHeader indexHeader { get; set; }
-        public IndexArea[] indexAreas { get; set; }
+        public IndexArea indexArea { get; set; }
+        // Packet Data Area is parsed as needed for individual function calls
         public DocumentArea documentArea{ get; set; }
         public byte[] data { get; set; }    //byte stream of the file
       
@@ -21,13 +21,7 @@ namespace WP_Reader
            // writeToFile(data);
             fileHeader = new FileHeader(data);
             int startIndex = fileHeader.ptrIndexArea;
-            indexHeader = new IndexHeader(data, startIndex);
-            indexAreas = new IndexArea[indexHeader.indexCount - 1];
-            for (int i = 0; i < indexAreas.Length; i++)
-            {
-                startIndex += 14;
-                indexAreas[i] = new IndexArea(data, startIndex);
-            }
+            indexArea = new IndexArea(data, startIndex);
             documentArea = new DocumentArea(this);
 
             //writeWPStreamToFile(documentArea.WPStream, URL);

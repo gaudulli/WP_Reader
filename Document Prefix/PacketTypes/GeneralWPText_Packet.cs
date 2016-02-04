@@ -20,9 +20,9 @@ namespace WP_Reader
             for (int i = 0; i < numTextBlocks; i++)
             {
                 byte[] currentTextBlock = new byte[sizeofBlock[i]];
-                Array.Copy(_data, index, currentTextBlock, 0, currentTextBlock.Length);
-                packetText[i] = new DocumentArea(document, index, currentTextBlock.Length + index);
-                index += sizeofBlock[i];
+                Array.Copy(_data, dataIndex, currentTextBlock, 0, currentTextBlock.Length);
+                packetText[i] = new DocumentArea(document, dataIndex, currentTextBlock.Length + dataIndex);
+                dataIndex += sizeofBlock[i];
             }
         }
 

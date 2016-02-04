@@ -45,24 +45,24 @@ namespace WP_Reader
             beginningStyleTextSize = sizeofBlock[1];
             endStyleTextSize = sizeofBlock[2];
             extraStyleTextSize = sizeofBlock[3];
-            styleType = (StyleType)_data[index];
-            index++;
-            styleflag = (StyleFlag)_data[index];
-            index++;
-            styleHash = BitConverter.ToInt16(_data, index);
-            index += 2;
-            descriptionBeginningRelativeOffset = BitConverter.ToInt16(_data, index);
-            index += 2;
+            styleType = (StyleType)_data[dataIndex];
+            dataIndex++;
+            styleflag = (StyleFlag)_data[dataIndex];
+            dataIndex++;
+            styleHash = BitConverter.ToInt16(_data, dataIndex);
+            dataIndex += 2;
+            descriptionBeginningRelativeOffset = BitConverter.ToInt16(_data, dataIndex);
+            dataIndex += 2;
             styleName = getWPWordString();
             styleDescription = getWPWordString();
-            paragraphOrientedBeginInformation = new DocumentArea(_document, index, index + paragraphTextSize);
-            index += paragraphTextSize;
-            otherBeginStyleInformation = new DocumentArea(_document, index, index + beginningStyleTextSize);
-            index += beginningStyleTextSize;
-            endStyleInformation = new DocumentArea(_document, index, index + endStyleTextSize);
-            index += endStyleTextSize;
-            extraStyleInformation = new DocumentArea(_document, index, index + extraStyleTextSize);
-            index += extraStyleTextSize;
+            paragraphOrientedBeginInformation = new DocumentArea(_document, dataIndex, dataIndex + paragraphTextSize);
+            dataIndex += paragraphTextSize;
+            otherBeginStyleInformation = new DocumentArea(_document, dataIndex, dataIndex + beginningStyleTextSize);
+            dataIndex += beginningStyleTextSize;
+            endStyleInformation = new DocumentArea(_document, dataIndex, dataIndex + endStyleTextSize);
+            dataIndex += endStyleTextSize;
+            extraStyleInformation = new DocumentArea(_document, dataIndex, dataIndex + extraStyleTextSize);
+            dataIndex += extraStyleTextSize;
 
         }
 

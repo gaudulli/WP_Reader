@@ -22,32 +22,22 @@ namespace WP_Reader {
 
         public void parseFileHeader(byte[] data) {
             //Check to make sure first 4 bytes are correct for a word perfect document.
-            if (data[0] != 0xFF || data[1] != 0x57 || data[2] != 0x50 || data[3] != 0x43) {
-                throw new Exception("InvalidFileID");
+            if (data[0] == 0xFF && data[1] == 0x57 && data[2] == 0x50 && data[3] == 0x43)
+            {
+                ptrDocumentArea = BitConverter.ToInt32(data, 4);
+                productType = data[8];
+                fileType = data[9];
+                majorVersion = data[10];
+                minorVersion = data[11];
+                encryption = BitConverter.ToInt16(data, 12);
+                ptrIndexArea = BitConverter.ToInt16(data, 14);
+                extendedReserve = new byte[4];
+                extendedReserve[0] = data[16];
+                extendedReserve[1] = data[17];
+                extendedReserve[2] = data[18];
+                extendedReserve[3] = data[19];
+                fileSize = BitConverter.ToInt32(data, 20);
             }
-
-            ptrDocumentArea = BitConverter.ToInt32(data, 4);
-
-            productType = data[8];
-
-            fileType = data[9];
-
-            majorVersion = data[10];
-
-            minorVersion = data[11];
-
-            encryption = BitConverter.ToInt16(data, 12);
-
-            ptrIndexArea = BitConverter.ToInt16(data, 14);
-
-            extendedReserve = new byte[4];
-
-            extendedReserve[0] = data[16];
-            extendedReserve[1] = data[17];
-            extendedReserve[2] = data[18];
-            extendedReserve[3] = data[19];
-
-            fileSize = BitConverter.ToInt32(data, 20);
 
 
         }

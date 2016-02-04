@@ -19,12 +19,12 @@ namespace WP_Reader
 
             if (prefixID > 0)   // test to see if there actually is a prefixID associated with the calling function
             {
-                if (indexArea.flags.HasFlag(IndexFlags.childPacketIDs))
+                if (index.flags.HasFlag(IndexFlags.childPacketIDs))
                 {
                     childIDTag = new short[childIDCount];
                     for (int i = 0; i < childIDCount; i++)
                     {
-                        childIDTag[i] = BitConverter.ToInt16(_data, index);
+                        childIDTag[i] = BitConverter.ToInt16(_data, dataIndex);
                     }
                 }
                 else

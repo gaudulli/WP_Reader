@@ -1,11 +1,11 @@
 # WP_Reader
 Library to parse WordPerfect documents in the WP6x file format.
 
-Models a WordPerfect document in the class WP6Document, which include `fileHeader`, `indexHeader`, `indexArea[]` and `documentArea`.  
+Models a WordPerfect document in the class WP6Document, which include `fileHeader`, `indexArea` and `documentArea`.  
 `documentArea` consists of a list of `WPTokens` called `WPStream`, which can then be accessed.
 `WPToken` is a class that models every character and function in a WordPerfect document.
 
-Not all functions have been mapped.  There are thousands of functions in the specification, and I have mapped the ones that I need for my projects.  The remaining unmapped functions are simply named (either with a function name or a function group name).
+Not all functions have been mapped.  There are hundreds of functions in the specification, and I have mapped the ones that I need for my projects.  The remaining unmapped functions are simply named (either with a function name or a function group name).
 
 Functions that have been mapped:
 
@@ -39,4 +39,9 @@ WP6Document doc = new WP6Document(url);
 The document being accessed cannot be currently open in WordPerfect (or any other application), because Windows throws a fit when that happens.
 
 The main useful property (for reading a document) in the WP6Document is `documentArea`.  This contains the actual document.  The other properties are accessed by the particular function that stores its data in the IndexArea(s).  For example, the WP function `bookmark` has its useful information stored in one of the IndexAreas as a Prefix Packet.   The C# class `bookmark` in WP_Reader has methods to access and extract this information.
+
+WP_Reader could, theoretically, be used to export the .wpd file type to another file format.  However, there are plenty of existing programs that do just that, including WordPerfect iteself, Microsoft Word and LibreOffice/OpenOffice Write.  The Write application uses the open source C++ [libwpd](http://libwpd.sourceforge.net/) library to translate WordPerfect documents into the odt file format.  That application has mapped nearly every WordPerfect function in the specification and does a very good job at translating the format.  
+
+For more information on how to use the library, go to the WPUniverse [forums](http://www.wpuniverse.com/vb/showthread.php?37525-WP_Reader-A-C-Library-to-Model-a-WordPerfect-File)
+
     

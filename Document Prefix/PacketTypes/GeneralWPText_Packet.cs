@@ -25,34 +25,5 @@ namespace WP_Reader
                 dataIndex += sizeofBlock[i];
             }
         }
-
-        //public override string ToString()
-        //{
-        //    StringBuilder sb = new StringBuilder();
-        //    sb.AppendLine("GeneralWPText_Packet");
-        //    sb.AppendLine("\tnumTextBlocks:  " + numTextBlocks);
-        //    sb.AppendLine("\tfirstBlockOffset: " + firstBlockOffset);
-        //    for (int i = 0; i < sizeofBlock.Length; i++)
-        //    {
-        //        sb.AppendLine(string.Format("\tSize of Text Block {0} {1}", i+1, sizeofBlock[i]));
-        //        foreach (WPToken j in packetText[i].WPStream)
-        //        {
-        //            Type itype = j.GetType();
-        //            if (itype == typeof(Character))
-        //            {
-        //                sb.Append(j.name.ToString());
-        //            }
-        //            else
-        //            {
-        //                //string str = " ";
-        //                string str = " [" + j.name.ToString() + "] ";
-        //                sb.Append(str);
-        //            }
-        //        }
-        //    }
-
-        //    return sb.ToString();
-        //}
-
     }
 }

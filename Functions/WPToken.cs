@@ -12,7 +12,6 @@ namespace WP_Reader
         public functionGroups functionGroup { get; set; }
 
         public WPToken(WP6Document doc, int index)
-
         {
 
         }

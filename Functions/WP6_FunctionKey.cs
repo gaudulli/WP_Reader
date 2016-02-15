@@ -9,10 +9,10 @@ namespace WP_Reader
         public byte group;
         public byte subgroup;
 
-        public WP6_FunctionKey(byte group, byte subgroup) {
+        public WP6_FunctionKey(byte group, byte subgroup) 
+        {
             this.group = group;
             this.subgroup = subgroup;
-
         }
 
         public override int GetHashCode()

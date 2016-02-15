@@ -7,7 +7,6 @@ namespace WP_Reader {
     public class VariableLengthFunction: Function
     
     {
-        //public functionGroups functionGroup { get; set; }
         public byte group { get; set; }
         public byte subGroup { get; set; }
         public int size { get; set; }

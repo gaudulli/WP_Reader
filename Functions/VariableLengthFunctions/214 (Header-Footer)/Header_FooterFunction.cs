@@ -13,9 +13,7 @@ namespace WP_Reader
 
         public Header_FooterFunction(WP6Document doc, int index)
             : base(doc, index)
-        {
-
-            
+        {           
             // for now, ignore the possible second prefixID (user assistant)
             if (prefixIds[0] > 0)
             {
@@ -23,6 +21,7 @@ namespace WP_Reader
                 // WP numbers prefixIDs beginning with 1, so need to subtract 1 to get correct ID
             }
              occurrence = (Header_FooterOccurrence)nonDeletableInfo[0]; // cast to enum
+
         }
     }
 

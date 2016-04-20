@@ -68,6 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\EndnoteOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\EndNoteOn.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\FootnoteOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\FootnoteOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Bookmark.cs" />
     <Compile Include="Document Prefix\PacketTypes\BookmarkPacket.cs" />
     <Compile Include="Functions\FixedLengthFunctions\AttributeOff.cs" />
@@ -132,6 +136,7 @@
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOff.cs" />
     <Compile Include="Document Prefix\IndexArea.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\ParseFootnote_EndnoteFunction.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />
     <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacter.cs" />

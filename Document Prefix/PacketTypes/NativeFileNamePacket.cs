@@ -36,10 +36,6 @@ namespace WP_Reader
             {
                 filename = "";
             }
-
-
         }
-
-
     }
 }

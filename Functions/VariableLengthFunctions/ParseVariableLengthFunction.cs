@@ -29,7 +29,7 @@ namespace WP_Reader
                 case functionGroups.header_footer:
                     return new Header_FooterFunction(doc, index);
                 case functionGroups.footnote_endnote:
-                    return new Footnote_EndnoteFunction(doc, index);
+                    return ParseFootnote_EndnoteFunction.getFunction(doc, index);
                 case functionGroups.set_number:
                     return new SetNumberFunction(doc, index);
                 case functionGroups.numbering_method:

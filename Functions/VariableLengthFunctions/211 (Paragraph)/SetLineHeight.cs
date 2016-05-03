@@ -12,13 +12,16 @@ namespace WP_Reader
     public class SetLineHeight:ParagraphGroupFunction
     {
         public short linesPerInch {get; set;}  //measurement in WPUs
-        public short minimumLinesPerInch { get; set; }  //measurement in WPUs
+        public short? minimumLinesPerInch { get; set; }  //measurement in WPUs
 
         public SetLineHeight(WP6Document doc, int index)
             : base(doc, index)
         {
             linesPerInch = BitConverter.ToInt16(nonDeletableInfo, 0);
-            minimumLinesPerInch = BitConverter.ToInt16(nonDeletableInfo, 2);
+            if (nonDeletableInfo.Length > 2)
+            {
+                minimumLinesPerInch = BitConverter.ToInt16(nonDeletableInfo, 2);
+            }
         }
     }
 }

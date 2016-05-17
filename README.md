@@ -16,12 +16,13 @@ Functions that have been mapped:
     Fixed length functions
     Variable-length functions:
         EOL group
-        Character Group -- a few have been mapped
+        Character Group -- about 25 out of 100 + have been mapped
         Page Group -- a few have been mapped
         Column Group -- a few have been mapped
         Paragraph Group -- a few have been mapped
         Character Group -- a few have been mapped
-        Header-Footer group
+        Header-Footer Group
+        Footnote-Endnote Group
         Style Group
         Tab Group
     

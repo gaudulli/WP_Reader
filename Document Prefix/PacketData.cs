@@ -43,8 +43,11 @@ namespace WP_Reader
                 {
                     numTextBlocks = BitConverter.ToInt16(_data, dataIndex);
                     dataIndex += 2;
-                    firstBlockOffset = BitConverter.ToInt32(_data, dataIndex);
-                    dataIndex += 4;
+                    if (numTextBlocks > 0)
+                    {
+                        firstBlockOffset = BitConverter.ToInt32(_data, dataIndex);
+                        dataIndex += 4;
+                    }
                     sizeofBlock = new int[numTextBlocks];
                     for (int i = 0; i < sizeofBlock.Length; i++)
                     {
@@ -65,7 +68,7 @@ namespace WP_Reader
         protected string getWPWordString()
         {
             string WPWordString = "";
-            int endofPacket = index.dataPacketPointer + index.sizeOfDataPacket;
+            int endofPacket = index.dataPacketPointer + index.sizeOfDataPacket -1;
             int sizeofPacket = index.sizeOfDataPacket;
             byte lowByte, highByte;
             bool nullTerminator = false;

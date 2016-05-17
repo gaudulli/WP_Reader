@@ -19,6 +19,7 @@ namespace WP_Reader {
         protected WP6Document document;
 
         private int _index;
+        protected int _startIndex;  // occasionally needed to get start index of function
         private byte[] _data;
 
 
@@ -26,11 +27,11 @@ namespace WP_Reader {
         {
             document = doc;
             _index = index;
+            _startIndex = index;
             _data = document.data;
             prefixIds = new int[0];     // initialize null array in case no prefix IDs exist
             prefixIdCount = 0;          // set to 0 in case no prefix IDs exist
             parseFunction();
-            //index = index + size;
         }
 
         public VariableLengthFunction()
@@ -123,6 +124,37 @@ namespace WP_Reader {
             Array.Copy(secondHalf, 0, bytes, 3, 2);
             return BitConverter.ToInt32(bytes, 0);
 
+        }
+
+
+        protected string getWPWordString(byte[] info, int startIndex)
+        {
+            int dataIndex = startIndex;
+            string WPWordString = "";
+            byte lowByte, highByte;
+            bool nullTerminator = false;
+            while (!nullTerminator && dataIndex < info.Count())
+            {
+                lowByte = info[dataIndex];
+                highByte = info[dataIndex + 1];
+                if (lowByte == 0 && highByte == 0)
+                {
+                    dataIndex += 2;
+                    return WPWordString;
+                }
+                else if (highByte == 0 && lowByte < 127)
+                {
+                    WPWordString += (char)lowByte;
+                }
+                else if (highByte > 0 && highByte < 15)
+                {
+                    WPWordString += new ExtendedCharacter(highByte, lowByte).content;   // call alternate constructor for 
+                    //  ExtendedCharacter to get Unicode value.
+                }
+                dataIndex += 2;
+
+            }
+            return WPWordString;
         }
 
 

@@ -68,6 +68,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CharacterShadingChange.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Color.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Block_On_Off.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\BeginHiddenText.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\EndHiddenText.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\EndMarkedTextForList.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\BeginMarkedTextForList.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\EndMarkedTextForTableOfContents.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\BeginMarkedTextForTableOfContents.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CrossReferenceTag.cs" />
+    <Compile Include="Document Prefix\PacketTypes\CrossReferenceTagPacket.cs" />
     <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\EndnoteOff.cs" />
     <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\EndNoteOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\FootnoteOff.cs" />
@@ -137,6 +148,17 @@
     <Compile Include="Functions\VariableLengthFunctions\221 %28Style%29\GlobalOff.cs" />
     <Compile Include="Document Prefix\IndexArea.cs" />
     <Compile Include="Functions\VariableLengthFunctions\215 %28Footnote-Endnote%29\ParseFootnote_EndnoteFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetThousandsSeparatorCharacter.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetUnderlineSpacesMode.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetUnderlineTabsMode.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\HorizontalAdvanceToPagePosition.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\VerticalAdvanceTo PagePosition.cs" />
+    <Compile Include="Document Prefix\PacketTypes\IndexMarkPacket.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\IndexEntry.cs" />
+    <Compile Include="Document Prefix\PacketTypes\TableOfAuthoritiesMarkPacket.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\TableOfAuthorityEntry.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Kerning.cs" />
+    <Compile Include="UtilityMethods.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />
     <Compile Include="Functions\FixedLengthFunctions\ExtendedCharacter.cs" />

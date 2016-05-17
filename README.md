@@ -5,9 +5,9 @@ Models a WordPerfect document in the class WP6Document, which include `fileHeade
 `documentArea` consists of a list of `WPTokens` called `WPStream`, which can then be accessed.
 `WPToken` is a class that models every character and function in a WordPerfect document.
 
-Not all functions have been mapped.  There are hundreds of functions in the specification, and I have mapped the ones that I need for my projects.  The remaining unmapped functions are simply named (either with a function name or a function group name).
+Not all functions have been fully modeled.  There are hundreds of functions in the specification, and I have not had time to model every one. The remaining unmapped functions are simply named (either with a function name or a function group name).
 
-Functions that have been mapped:
+Functions that have been modeled:
 
     characters
     default extended international character set

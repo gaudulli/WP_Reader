@@ -18,6 +18,8 @@ namespace WP_Reader
                 {
                     case ParagraphGroup.set_line_height:        // xD3 00 (211 00)
                         return new SetLineHeight(doc, index);
+                    case ParagraphGroup.set_line_spacing:
+                        return new SetLineSpacing(doc, index);
 
                     default:
                         return new ParagraphGroupFunction(doc, index);

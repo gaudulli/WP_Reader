@@ -13,5 +13,21 @@ namespace WP_Reader
         {
 
         }
+
+        public override void getName()
+        {
+            int bitIndex = 2;
+            int mask = 1 << bitIndex;
+            subGroup &= (byte)~mask;
+            WP6_FunctionKey key = new WP6_FunctionKey(group, subGroup);
+            if (WP6_FunctionNames.map.ContainsKey(key))
+            {
+                name = WP6_FunctionNames.map[key];
+            }
+            else
+            {
+                name = functionGroups.none;
+            }
+        }
     }
 }

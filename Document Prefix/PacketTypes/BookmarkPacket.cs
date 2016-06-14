@@ -14,7 +14,7 @@ namespace WP_Reader
         public BookmarkPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {
-            if (prefixID > 0)
+            if (prefixID > -1)
             {
                 dataIndex += 2; //skip past reserved 2 bytes
                 flags = (BookmarkDataFlags)_data[dataIndex];

@@ -16,9 +16,12 @@ namespace WP_Reader
         public IndexMarkPacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {
-            indexName = getWPWordString();
-            heading = getWPWordString();
-            subheading = getWPWordString();
+            if (prefixID > -1)
+            {
+                indexName = getWPWordString();
+                heading = getWPWordString();
+                subheading = getWPWordString();
+            }
         }
 
     }

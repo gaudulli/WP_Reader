@@ -26,7 +26,7 @@ namespace WP_Reader
             noParagraphNumbers = num == 8;
             outlineLevelBit4 = num == 0x10;
             hiddenTableCellInformation = num == -1;
-            hiddenByHideSelection = num == -2;      // I have little idea what these properites are used for...
+            hiddenByHideSelection = num == -2;      // I have no idea what these properites are used for...
 
             levelNumberAtTimeOfHide = nonDeletableInfo[1];
         }

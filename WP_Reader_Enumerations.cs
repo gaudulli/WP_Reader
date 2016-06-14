@@ -375,31 +375,41 @@ public enum BoxGroup
 
 public enum TabGroup
 {
-        hard_back_tab,
-        hard_left_tab,
-        left_tab,
-        hard_left_tab_DL,
-        left_tab_DL,
-        hard_left_ind,
-        hard_left_right_ind,
-        hard_center_on_mar,
-        hard_center_on_mar_DL,
-        hard_center_on_pos,
-        hard_center_tab,
-        center_tab,
-        hard_center_tab_DL,
-        center_tab_DL,
-        hard_flush_right,
-        hard_flush_right_DL,
-        hard_right_tab,
-        right_tab,
-        hard_right_tab_DL,
-        right_tab_DL,
-        hard_dec_tab,
-        dec_tab,
-        hard_dec_tab_DL,
-        dec_tab_DL,
-        none
+    left_tab,
+    left_tab_DL,
+    right_tab,
+    right_tab_DL,
+    center_tab,
+    center_tab_DL,
+    decimal_tab,
+    decimal_tab_DL,
+    vertical_bar_tab,
+    vertical_bar_tab_DL,
+    hard_back_tab,
+    hard_back_tab_DL,
+    hard_tab,
+    hard_tab_DL,
+    hard_left_tab,
+    hard_left_tab_DL,
+    hard_table_tab,
+    hard_table_tab_DL,
+    hard_left_indent,
+    hard_left_indent_DL,
+    hard_left_right_indent,
+    hard_left_right_indent_DL,
+    hard_center_on_margin,
+    hard_center_on_margin_DL,
+    hard_center_on_pos,
+    hard_center_on_pos_DL,
+    hard_center_tab,
+    hard_center_tab_DL,
+    hard_flush_right,
+    hard_flush_right_DL,
+    hard_right_tab,
+    hard_right_tab_DL,
+    hard_decimal_tab,
+    hard_decimal_tab_DL,
+    none
 
 }
 
@@ -511,5 +521,28 @@ public enum IndexFlags
     valid_use_count_is_1 = 4,   //no idea what this bit is supposed to do...
     conditional_valid_use_count_is_1 = 8    // or this one
 
+}
+
+public struct RGB_Color
+{
+    public double red { get; set; }
+    public double green { get; set; }
+    public double blue { get; set; }
+}
+
+public struct RGBS_Color
+{
+    public double red { get; set; }
+    public double green { get; set; }
+    public double blue { get; set; }
+    public double shading { get; set; }
+}
+
+public struct RGBT_Color
+{
+    public double red { get; set; }
+    public double green { get; set; }
+    public double blue { get; set; }
+    public double transparency { get; set; }
 }
 

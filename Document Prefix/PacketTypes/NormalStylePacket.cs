@@ -33,7 +33,7 @@ namespace WP_Reader
             base(document, prefixID)
         {
             _document = document;
-            if (prefixID > 0)
+            if (prefixID > -1)
             {
                 getContents();
             }

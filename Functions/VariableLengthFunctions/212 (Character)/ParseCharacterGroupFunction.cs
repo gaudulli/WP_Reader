@@ -55,7 +55,19 @@ namespace WP_Reader
                     case CharacterGroup.character_shading_change:
                         return new CharacterShadingChange(doc, index);
                     case CharacterGroup.bookmark:
-                        return new Bookmark(doc, index);                                 // 0x D4 25 (212 37)
+                        return new Bookmark(doc, index);                                // 0x D4 25 (212 37)
+                    case CharacterGroup.font_face_change:
+                        return new FontFaceChange(doc, index);
+                    case CharacterGroup.font_size_change:
+                        return new FontSizeChange(doc, index);
+                    case CharacterGroup.set_language:
+                        return new SetLanguage(doc, index);
+                    case CharacterGroup.comment:
+                        return new Comment(doc, index);
+                    case CharacterGroup.set_dot_leader_characters:
+                        return new SetDotLeaderCharacters(doc, index);
+                    case CharacterGroup.conditional_end_of_page:
+                        return new ConditionalEndOfPage(doc, index);
                     case CharacterGroup.hypertext_begin_on:     
                         return new HypertextBeginOn(doc, index);                        // 0x D4 34 (212 52)
                     case CharacterGroup.hypertext_begin_off:

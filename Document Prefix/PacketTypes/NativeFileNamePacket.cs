@@ -17,7 +17,7 @@ namespace WP_Reader
             base(document, prefixID)
         {
 
-            if (prefixID > 0)   // test to see if there actually is a prefixID associated with the calling function
+            if (prefixID > -1)   // test to see if there actually is a prefixID associated with the calling function
             {
                 if (index.flags.HasFlag(IndexFlags.childPacketIDs))
                 {

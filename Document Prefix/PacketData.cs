@@ -24,7 +24,7 @@ namespace WP_Reader
         public PacketData(WP6Document document, int prefixID)
         {
             _data = document.data;
-            if (prefixID > 0)
+            if (prefixID > -1)
             {
                 index = document.indexArea.indexes[prefixID];
                 dataIndex = index.dataPacketPointer;

@@ -14,7 +14,10 @@ namespace WP_Reader
       public CrossReferenceTagPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {
-            targetname = getWPWordString();
+            if (prefixID > -1)
+            {
+                targetname = getWPWordString();
+            }
         }
     }
 }

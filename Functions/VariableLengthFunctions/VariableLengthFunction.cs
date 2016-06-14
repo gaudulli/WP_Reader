@@ -19,7 +19,7 @@ namespace WP_Reader {
         protected WP6Document document;
 
         private int _index;
-        protected int _startIndex;  // occasionally needed to get start index of function
+        public int _startIndex;  // occasionally needed to get start index of function
         private byte[] _data;
 
 
@@ -73,7 +73,7 @@ namespace WP_Reader {
             getName(); 
         }
 
-        public void getName()
+        public virtual void getName()
         {
             WP6_FunctionKey key = new WP6_FunctionKey(group, subGroup);
             if (WP6_FunctionNames.map.ContainsKey(key))
@@ -98,7 +98,7 @@ namespace WP_Reader {
 
         public double convertWPFPtoDouble(int value)
         {
-            return (value / (UInt16.MaxValue + 1));
+            return ((double)value / (UInt16.MaxValue + 1));
         }
 
         public int convertDoubletoWPFP(double value)
@@ -109,7 +109,7 @@ namespace WP_Reader {
         public double convertWPSPtoDouble(int value)
         {
             byte[] bytes = BitConverter.GetBytes(value);
-            short firstHalf = BitConverter.ToInt16(bytes, 0);
+            ushort firstHalf = BitConverter.ToUInt16(bytes, 0);
             short secondHalf = BitConverter.ToInt16(bytes, 2);
             return convertWPFPtoDouble(firstHalf) + secondHalf;
         }

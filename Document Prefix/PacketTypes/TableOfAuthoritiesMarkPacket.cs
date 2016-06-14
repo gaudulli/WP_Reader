@@ -15,9 +15,12 @@ namespace WP_Reader
         public TableOfAuthoritiesMarkPacket(WP6Document document, int prefixID): 
             base (document, prefixID)
         {
-            childPID = new GeneralWPText_Packet(document, prefixID);
-            shortFormName = getWPWordString();
-            TOASectionName = getWPWordString();
+            if (prefixID > -1)
+            {
+                childPID = new GeneralWPText_Packet(document, prefixID);
+                shortFormName = getWPWordString();
+                TOASectionName = getWPWordString();
+            }
         }
 
     }

@@ -8,16 +8,14 @@ namespace WP_Reader
 {
     public class Color: CharacterGroupFunction
     {
-        public double red { get; set; } // % of each color: 255 = 100%
-        public double green {get; set;}
-        public double blue { get; set; }
+        public RGB_Color color;
 
         public Color(WP6Document doc, int index)
             : base(doc, index)
         {
-            red = (double)nonDeletableInfo[0] / 255;
-            green = (double)nonDeletableInfo[1] / 255;
-            blue = (double)nonDeletableInfo[2] / 255;
+            color.red = (double)nonDeletableInfo[0] / 255;
+            color.green = (double)nonDeletableInfo[1] / 255;
+            color.blue = (double)nonDeletableInfo[2] / 255;
         }
 
     }

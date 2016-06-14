@@ -68,6 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comment.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\ConditionalEndOfPage.cs" />
+    <Compile Include="Document Prefix\PacketTypes\Comment_AnnotationPacket.cs" />
+    <Compile Include="Document Prefix\PacketTypes\FontTypefaceDescriptorPoolPacket.cs" />
+    <Compile Include="Document Prefix\PacketTypes\FontTypefaceEnumerations.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\FontSizeChange.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\FontFaceChange.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\CharacterShadingChange.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Color.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Block_On_Off.cs" />
@@ -158,6 +165,9 @@
     <Compile Include="Document Prefix\PacketTypes\TableOfAuthoritiesMarkPacket.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\TableOfAuthorityEntry.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Kerning.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetLanguage.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\SetDotLeaderCharacters.cs" />
+    <Compile Include="SetLineSpacing.cs" />
     <Compile Include="UtilityMethods.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />

@@ -372,15 +372,23 @@ namespace WP_Reader
         // tab subgroup is based on bit flags, but not all combinations are possible
         // TODO investigate vertical bar tabs--do they really exist?
         map.Add(new WP6_FunctionKey(0xE0, 0), TabGroup.hard_back_tab);      //224
+        map.Add(new WP6_FunctionKey(0xE0, 2), TabGroup.hard_back_tab_DL);   //736
+        map.Add(new WP6_FunctionKey(0xE0, 8), TabGroup.hard_tab);           //2272
+        map.Add(new WP6_FunctionKey(0xE0, 10), TabGroup.hard_tab_DL);       //3808
         map.Add(new WP6_FunctionKey(0xE0, 16), TabGroup.hard_left_tab);     //4320
         map.Add(new WP6_FunctionKey(0xE0, 17), TabGroup.left_tab);          // 4576
         map.Add(new WP6_FunctionKey(0xE0, 18), TabGroup.hard_left_tab_DL);  //4832
         map.Add(new WP6_FunctionKey(0xE0, 19), TabGroup.left_tab_DL);       //5088
-        map.Add(new WP6_FunctionKey(0xE0, 48), TabGroup.hard_left_ind);     //12512
-        map.Add(new WP6_FunctionKey(0xE0, 56), TabGroup.hard_left_right_ind);   //14560
-        map.Add(new WP6_FunctionKey(0xE0, 64), TabGroup.hard_center_on_mar);    //16608
-        map.Add(new WP6_FunctionKey(0xE0, 66), TabGroup.hard_center_on_mar_DL); //17120
+        map.Add(new WP6_FunctionKey(0xE0, 24), TabGroup.hard_table_tab);    //6368
+        map.Add(new WP6_FunctionKey(0xE0, 26), TabGroup.hard_table_tab_DL); //6880      add vertical bar tabs
+        map.Add(new WP6_FunctionKey(0xE0, 48), TabGroup.hard_left_indent);     //12512
+        map.Add(new WP6_FunctionKey(0xE0, 50), TabGroup.hard_left_indent_DL);   //13024
+        map.Add(new WP6_FunctionKey(0xE0, 56), TabGroup.hard_left_right_indent);   //14560
+        map.Add(new WP6_FunctionKey(0xE0, 58), TabGroup.hard_left_right_indent_DL); //15072
+        map.Add(new WP6_FunctionKey(0xE0, 64), TabGroup.hard_center_on_margin);    //16608
+        map.Add(new WP6_FunctionKey(0xE0, 66), TabGroup.hard_center_on_margin_DL); //17120
         map.Add(new WP6_FunctionKey(0xE0, 72), TabGroup.hard_center_on_pos);    //18656
+        map.Add(new WP6_FunctionKey(0xE0, 74), TabGroup.hard_center_on_pos_DL);    //17120
         map.Add(new WP6_FunctionKey(0xE0, 80), TabGroup.hard_center_tab);       //20704
         map.Add(new WP6_FunctionKey(0xE0, 81), TabGroup.center_tab);            //20960
         map.Add(new WP6_FunctionKey(0xE0, 82), TabGroup.hard_center_tab_DL);    //21216
@@ -391,10 +399,10 @@ namespace WP_Reader
         map.Add(new WP6_FunctionKey(0xE0, 145), TabGroup.right_tab);            //37344
         map.Add(new WP6_FunctionKey(0xE0, 146), TabGroup.hard_right_tab_DL);    //37600
         map.Add(new WP6_FunctionKey(0xE0, 147), TabGroup.right_tab_DL);         //37856
-        map.Add(new WP6_FunctionKey(0xE0, 208), TabGroup.hard_dec_tab);         //53472
-        map.Add(new WP6_FunctionKey(0xE0, 209), TabGroup.dec_tab);              //53728
-        map.Add(new WP6_FunctionKey(0xE0, 210), TabGroup.hard_dec_tab_DL);      //53984
-        map.Add(new WP6_FunctionKey(0xE0, 211), TabGroup.dec_tab_DL);           //54240
+        map.Add(new WP6_FunctionKey(0xE0, 208), TabGroup.hard_decimal_tab);         //53472
+        map.Add(new WP6_FunctionKey(0xE0, 209), TabGroup.decimal_tab);              //53728
+        map.Add(new WP6_FunctionKey(0xE0, 210), TabGroup.hard_decimal_tab_DL);      //53984
+        map.Add(new WP6_FunctionKey(0xE0, 211), TabGroup.decimal_tab_DL);           //54240
             
         //225 Platform Group
         //Skip over all platform functions; just fill in a blank reference in case code appears in document.

@@ -19,7 +19,7 @@ namespace WP_Reader {
         protected WP6Document document;
 
         private int _index;
-        public int _startIndex;  // occasionally needed to get start index of function
+        
         private byte[] _data;
 
 

@@ -9,6 +9,8 @@ namespace WP_Reader
     public class Function : WPToken
     {
 
+        public int _startIndex;  // occasionally needed to get start index of function
+
         public Function(WP6Document doc, int index)
             : base(doc, index)
         {

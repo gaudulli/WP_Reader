@@ -21,6 +21,8 @@ namespace WP_Reader
                         return new LeftMarginSet(doc, index);
                     case ColumnGroup.right_margin_set:
                         return new RightMarginSet(doc, index);
+                    case ColumnGroup.define_text_colums:
+                        return new DefineTextColumns(doc, index);
 
                     default:
                         return new ColumnGroupFunction(doc, index);

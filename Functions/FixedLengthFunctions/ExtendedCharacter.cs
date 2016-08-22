@@ -26,6 +26,7 @@ namespace WP_Reader
             functionData = new byte[2];
             functionData[1] = charSet;
             functionData[0] = offset;
+            codeValue = ((int)charset << 8 | (int)offset) + PUA;
             parseCharacter();
         }
 
@@ -34,6 +35,7 @@ namespace WP_Reader
             name = FixedLengthGroup.extended_character;
             charNumber = functionData[0];
             charset = (WP6_Character_Sets)Enum.Parse(typeof(WP6_Character_Sets), functionData[1].ToString());
+            codeValue = (functionData[1] << 8 | functionData[0]) + PUA;
             switch (charset)
             {
                 case WP6_Character_Sets.multinational:

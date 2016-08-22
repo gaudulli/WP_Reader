@@ -10,6 +10,8 @@ namespace WP_Reader
     {
         public Enum name { get; set; }
         public functionGroups functionGroup { get; set; }
+        public int codeValue { get; set; }    // value of function group and subgroup (inversed, because that's what PerfectScript does!)
+        public bool hasTextContent { get; set; }
 
         public WPToken(WP6Document doc, int index)
         {
@@ -19,5 +21,7 @@ namespace WP_Reader
         {
 
         }
+
+
     }
 }

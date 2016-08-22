@@ -70,7 +70,8 @@ namespace WP_Reader {
                 nonDeletableInfo[i] = _data[_index];
                 _index++;
             }
-            getName(); 
+            getName();
+            codeValue = (subGroup << 8 | group) + PUA;
         }
 
         public virtual void getName()
@@ -88,7 +89,7 @@ namespace WP_Reader {
 
         public double convertWPUtoInches(int value)
         {
-            return value / 1200;
+            return ((double)value / 1200);
         }
 
         public int convertInchestoWPU(double value)

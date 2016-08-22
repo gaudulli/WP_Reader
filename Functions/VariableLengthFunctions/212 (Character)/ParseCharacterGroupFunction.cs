@@ -68,6 +68,10 @@ namespace WP_Reader
                         return new SetDotLeaderCharacters(doc, index);
                     case CharacterGroup.conditional_end_of_page:
                         return new ConditionalEndOfPage(doc, index);
+                    case CharacterGroup.date:
+                        return new Date(doc, index);
+                    case CharacterGroup.end_of_date:
+                        return new EndOfDate(doc, index);
                     case CharacterGroup.hypertext_begin_on:     
                         return new HypertextBeginOn(doc, index);                        // 0x D4 34 (212 52)
                     case CharacterGroup.hypertext_begin_off:

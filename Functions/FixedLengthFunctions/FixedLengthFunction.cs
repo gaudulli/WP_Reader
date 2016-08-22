@@ -25,6 +25,7 @@ namespace WP_Reader
             _data = document.data;
             name = FixedLengthGroup.none;
             functionGroup = functionGroups.fixedLength;
+            codeValue = (_data[_index + 2] << 8 | _data[_index + 1]) + PUA;
             parseFunction();
         }
 
@@ -40,10 +41,10 @@ namespace WP_Reader
             functionData = new byte[sizeFunctionData];
             for (int i = 0; i < sizeFunctionData; i++)
             {
-
                 functionData[i] = _data[_index];
                 _index++;
             }
+
         }
 
 

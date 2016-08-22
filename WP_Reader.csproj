@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -68,6 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\VariableLengthFunctions\210 %28Column%29\DefineTextColumns.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\EndOfDate.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Date.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\Comment.cs" />
     <Compile Include="Functions\VariableLengthFunctions\212 %28Character%29\ConditionalEndOfPage.cs" />
     <Compile Include="Document Prefix\PacketTypes\Comment_AnnotationPacket.cs" />

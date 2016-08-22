@@ -8,7 +8,7 @@ namespace WP_Reader
 {
     public class Function : WPToken
     {
-
+        protected  const int  PUA = 0xF0000;
         public int _startIndex;  // occasionally needed to get start index of function
 
         public Function(WP6Document doc, int index)

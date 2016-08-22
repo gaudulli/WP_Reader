@@ -19,11 +19,27 @@ namespace WP_Reader
             {
                 // assign EOL single byte functions to EOL group but not as a variable length function
                 functionGroup = functionGroups.EOL;
+                hasTextContent = true;
             }
             WP6_FunctionKey key = new WP6_FunctionKey(data[index], 0);
             if (WP6_FunctionNames.map.ContainsKey(key))
             {
                 name = WP6_FunctionNames.map[key];
+                codeValue = data[index] + PUA;
+                if (functionGroup == functionGroups.singleByte)
+                {
+                    switch ((SingleByteGroup)name)
+                    {
+                        case SingleByteGroup.soft_space:
+                        case SingleByteGroup.hard_space:
+                        case SingleByteGroup.hard_hyphen_in_line:
+                        case SingleByteGroup.dormant_hard_return:
+                            {
+                                hasTextContent = true;
+                                break;
+                            }
+                    }
+                }
             }
             else
             {

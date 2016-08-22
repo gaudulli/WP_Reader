@@ -39,7 +39,7 @@ namespace WP_Reader
                 sb.AppendLine(i + "\t" + bytes[i].ToString("X2") + "\t\t" + Encoding.ASCII.GetString(bytes, i, 1) + "\t\t" + bytes[i]);
             }
 
-            File.WriteAllText("C:/HexData2.txt", sb.ToString());
+            File.WriteAllText("C:/Users/ric.gaudet/documents/HexData2.txt", sb.ToString());
         }
 
         private void writeMapToFile(Dictionary<WP6_FunctionKey, string> map)

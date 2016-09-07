@@ -20,6 +20,12 @@ namespace WP_Reader
                         return new SetLineHeight(doc, index);
                     case ParagraphGroup.set_line_spacing:
                         return new SetLineSpacing(doc, index);
+                    case ParagraphGroup.begin_generated_text:
+                        return new BeginGeneratedText(doc, index);
+                    case ParagraphGroup.end_of_generated_text:
+                        return new EndOfGeneratedText(doc, index);
+                    case ParagraphGroup.define_marked_text:
+                        return new DefineMarkedText(doc, index);
 
                     default:
                         return new ParagraphGroupFunction(doc, index);

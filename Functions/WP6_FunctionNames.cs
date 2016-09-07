@@ -387,7 +387,7 @@ namespace WP_Reader
         map.Add(new WP6_FunctionKey(0xE0, 64), TabGroup.hard_center_on_margin);    //16608
         map.Add(new WP6_FunctionKey(0xE0, 66), TabGroup.hard_center_on_margin_DL); //17120
         map.Add(new WP6_FunctionKey(0xE0, 72), TabGroup.hard_center_on_pos);       //18656
-        map.Add(new WP6_FunctionKey(0xE0, 74), TabGroup.hard_center_on_pos_DL);    //17120
+        map.Add(new WP6_FunctionKey(0xE0, 74), TabGroup.hard_center_on_pos_DL);    //19168
         map.Add(new WP6_FunctionKey(0xE0, 80), TabGroup.hard_center_tab);       //20704
         map.Add(new WP6_FunctionKey(0xE0, 81), TabGroup.center_tab);            //20960
         map.Add(new WP6_FunctionKey(0xE0, 82), TabGroup.hard_center_tab_DL);    //21216

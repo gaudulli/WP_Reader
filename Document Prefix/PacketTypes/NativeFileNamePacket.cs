@@ -25,7 +25,9 @@ namespace WP_Reader
                     for (int i = 0; i < childIDCount; i++)
                     {
                         childIDTag[i] = BitConverter.ToInt16(_data, dataIndex);
+                        dataIndex += 2;
                     }
+                    filename = getWPWordString();
                 }
                 else
                 {

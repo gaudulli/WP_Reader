@@ -19,7 +19,7 @@ namespace WP_Reader
 
         public Character(string _content)
         {
-            functionGroup = functionGroups.character;
+            functionGroup = functionGroups.textCharacter;
             name = functionGroups.none;
             content = _content;
         }

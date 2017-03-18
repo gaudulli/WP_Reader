@@ -102,7 +102,7 @@ namespace WP_Reader
                     content = new string((char)ExtendedCharacterSets.WP6_ArabicScript[charNumber], 1);
                     break;
                 default:
-                    content = "";
+                    content = " ";
                     break;
             }
 

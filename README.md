@@ -44,4 +44,6 @@ WP_Reader could, theoretically, be used to export the .wpd file type to another 
 
 For more information on how to use the library, go to the WPUniverse [forums](http://www.wpuniverse.com/vb/showthread.php?37525-WP_Reader-A-C-Library-to-Model-a-WordPerfect-File)
 
+ricgaudet@gmail.com
+
     

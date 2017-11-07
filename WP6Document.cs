@@ -26,7 +26,7 @@ namespace WP_Reader
 
             //writeWPStreamToFile(documentArea.WPStream, URL);
             //writeMapToFile(WP6_FunctionNames.map);
-            writeToFile(data);
+            //writeToFile(data);
 
         }
 

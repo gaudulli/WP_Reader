@@ -46,6 +46,7 @@ namespace Reader
         {
             string path = textBox1.Text;
              doc = new WP6Document(path);
+            WP6Document doc2 = doc;
 
             this.Close();
 

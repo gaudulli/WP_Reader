@@ -68,6 +68,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\EndOfDelayedCodes.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\DelayedCodes.cs" />
     <Compile Include="Document Prefix\PacketTypes\CountersDataPacket.cs" />
     <Compile Include="Functions\VariableLengthFunctions\211 %28Paragraph%29\DefineMarkedText.cs" />
     <Compile Include="Functions\VariableLengthFunctions\211 %28Paragraph%29\EndOfGeneratedText.cs" />
@@ -178,6 +180,10 @@
     <Compile Include="Functions\UnicodePlaceHolders.cs" />
     <Compile Include="Document Prefix\PacketTypes\MarkTextForGenerateDefinitionPacket.cs" />
     <Compile Include="Document Prefix\PacketTypes\PageNumberFormatStringPacket.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\PageNumberPosition.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\PageNumberFormat.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\StartOfDelayedCodes.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\SuppressPageCharacteristics.cs" />
     <Compile Include="UtilityMethods.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />

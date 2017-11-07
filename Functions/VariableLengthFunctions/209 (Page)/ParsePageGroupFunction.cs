@@ -21,6 +21,18 @@ namespace WP_Reader
                         return new TopMarginSet(doc, index);
                     case PageGroup.bottom_margin_set:
                         return new BottomMarginSet(doc, index);
+                    case PageGroup.delayed_codes:
+                        return new DelayedCodes(doc, index);
+                    case PageGroup.page_number_position:
+                        return new PageNumberPosition(doc, index);
+                    case PageGroup.page_number_format:
+                        return new PageNumberFormat(doc, index);
+                    case PageGroup.start_of_delayed_codes:
+                        return new StartOfDelayedCodes(doc, index);
+                    case PageGroup.end_of_delayed_codes:
+                        return new EndOfDelayedCodes(doc, index);
+                    case PageGroup.suppress_page_characteristics:
+                        return new SuppressPageCharacteristics(doc, index);
 
                     default:
                         return new PageGroupFunction(doc, index);

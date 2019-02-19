@@ -43,7 +43,7 @@ namespace WP_Reader
                 case functionGroups.style:
                     return ParseStyleGroupFunction.getFunction(doc, index);
                 case functionGroups.merge:
-                    return new MergeFunction(doc, index);
+                    return ParseMergeGroupFunction.getFunction(doc, index);
                 case functionGroups.box:
                     return new BoxFunction(doc, index);
                 case functionGroups.tab:

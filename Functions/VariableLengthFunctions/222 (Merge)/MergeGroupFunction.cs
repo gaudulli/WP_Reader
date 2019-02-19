@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    public class MergeFunction:VariableLengthFunction
+    public class MergeGroupFunction:VariableLengthFunction
     {
-        public MergeFunction(WP6Document doc, int index)
+        public MergeGroupFunction(WP6Document doc, int index)
             : base(doc, index)
         {
 

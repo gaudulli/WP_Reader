@@ -356,14 +356,120 @@ namespace WP_Reader
         map.Add(new WP6_FunctionKey(0xDD, 10), StyleGroup.global_on);
         map.Add(new WP6_FunctionKey(0xDD, 11), StyleGroup.global_off);
 
-        //222 Merge Group
-        //Skip over all merge functions; just fill in a blank reference in case code appears in document.
-        for (int i=0; i<150; i++){
-            map.Add(new WP6_FunctionKey(0xDE, (byte)i),MergeGroup.merge);
-        }
+            //222 Merge Group
+            
+            map.Add(new WP6_FunctionKey(0xDE, 0), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 1), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,2 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,3 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 4), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 5), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 6), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,7 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 8), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,9 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 10), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 11), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,12 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,13 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE,14 ), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 15), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 16), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 17), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 18), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 19), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 20), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 21), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 22), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 23), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 24), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 25), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 26), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 27), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 28), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 29), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 30), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 31), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 32), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 33), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 34), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 35), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 36), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 37), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 38), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 39), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 40), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 41), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 42), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 43), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 44), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 45), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 46), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 47), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 48), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 49), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 50), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 51), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 52), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 53), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 54), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 55), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 56), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 57), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 58), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 59), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 60), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 61), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 62), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 63), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 64), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 65), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 66), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 67), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 68), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 69), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 70), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 71), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 72), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 73), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 74), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 75), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 76), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 77), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 78), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 79), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 80), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 81), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 82), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 83), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 84), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 85), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 86), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 87), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 88), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 89), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 90), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 91), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 92), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 93), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 94), MergeGroup);
+            map.Add(new WP6_FunctionKey(0xDE, 95), MergeGroup);
 
-        //223 Box Group
-        map.Add(new WP6_FunctionKey(0xDF, 0), BoxGroup.character_anchored_box);
+
+
+
+
+
+
+
+
+            //for (int i=0; i<150; i++)
+            //    {
+            //    map.Add(new WP6_FunctionKey(0xDE, (byte)i),MergeGroup.none);
+            //}
+
+            //223 Box Group
+            map.Add(new WP6_FunctionKey(0xDF, 0), BoxGroup.character_anchored_box);
         map.Add(new WP6_FunctionKey(0xDF, 1), BoxGroup.paragraph_anchored_box);
         map.Add(new WP6_FunctionKey(0xDF, 2), BoxGroup.page_anchored_box);
         map.Add(new WP6_FunctionKey(0xDF, 3), BoxGroup.graphics_rule);

@@ -125,7 +125,7 @@
     <Compile Include="Functions\VariableLengthFunctions\216 %28Set Number%29\SetNumberFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\217 %28Numbering Method%29\NumberingMethodFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\219 %28Increment Number%29\IncrementNumberFunction.cs" />
-    <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\MergeFunction.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\MergeGroupFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\224 %28Tab%29\TabFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\225 %28Platform%29\PlatformFunction.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\ParsePageGroupFunction.cs" />
@@ -184,6 +184,7 @@
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\PageNumberFormat.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\StartOfDelayedCodes.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\SuppressPageCharacteristics.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\ParseMergeGroupFunction.cs" />
     <Compile Include="UtilityMethods.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />

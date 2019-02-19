@@ -18,7 +18,7 @@ namespace WP_Reader
         public WP6Document(string URL)
         {
            data = File.ReadAllBytes(URL);
-           // writeToFile(data);
+          // writeToFile(data);
             fileHeader = new FileHeader(data);
             int startIndex = fileHeader.ptrIndexArea;
             indexArea = new IndexArea(data, startIndex);

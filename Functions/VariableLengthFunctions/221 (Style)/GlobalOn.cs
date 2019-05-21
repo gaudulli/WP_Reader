@@ -18,9 +18,9 @@ namespace WP_Reader
         public GlobalOn(WP6Document doc, int index)
             : base(doc, index)
         {
-            info = new NormalStylePacket(doc, prefixIds[0] - 1);
-            hash = BitConverter.ToInt16(nonDeletableInfo, 0);
-            systemStyleNumber = nonDeletableInfo[2];
+            //info = new NormalStylePacket(doc, prefixIds[0] - 1);
+            //hash = BitConverter.ToInt16(nonDeletableInfo, 0);
+            //systemStyleNumber = nonDeletableInfo[2];
         }
     }
 }

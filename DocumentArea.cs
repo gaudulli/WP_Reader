@@ -101,6 +101,10 @@ namespace WP_Reader
                        WPStream.Add(function);
                    }
                }
+               else
+                {
+                    index++;
+                }
             }
         }
 

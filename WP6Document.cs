@@ -17,17 +17,23 @@ namespace WP_Reader
 
         public WP6Document(string URL)
         {
-           data = File.ReadAllBytes(URL);
-          // writeToFile(data);
-            fileHeader = new FileHeader(data);
-            int startIndex = fileHeader.ptrIndexArea;
-            indexArea = new IndexArea(data, startIndex);
-            documentArea = new DocumentArea(this);
+            try
+            {
+                data = File.ReadAllBytes(URL);
+                // writeToFile(data);
+                fileHeader = new FileHeader(data);
+                int startIndex = fileHeader.ptrIndexArea;
+                indexArea = new IndexArea(data, startIndex);
+                documentArea = new DocumentArea(this);
 
-            //writeWPStreamToFile(documentArea.WPStream, URL);
-            //writeMapToFile(WP6_FunctionNames.map);
-            //writeToFile(data);
-
+                //writeWPStreamToFile(documentArea.WPStream, URL);
+                //writeMapToFile(WP6_FunctionNames.map);
+                //writeToFile(data);
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         private void writeToFile(byte[] bytes)

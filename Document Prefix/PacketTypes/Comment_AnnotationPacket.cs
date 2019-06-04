@@ -8,7 +8,7 @@ namespace WP_Reader
 {
     public class Comment_AnnotationPacket: PacketData
     {
-        GeneralWPText_Packet text { get; set; }
+        public GeneralWPText_Packet text { get; set; }
         public CommentType commentType { get; set; }
         public DateTime commentTime { get; set; }
         public RGBS_Color color;

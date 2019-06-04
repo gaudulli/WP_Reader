@@ -13,6 +13,7 @@ namespace WP_Reader
         // Packet Data Area is parsed as needed for individual function calls
         public DocumentArea documentArea{ get; set; }
         public byte[] data { get; set; }    //byte stream of the file
+        public PrefixTimeStamp prefixTimeStamp { get; set; }
       
 
         public WP6Document(string URL)
@@ -26,6 +27,11 @@ namespace WP_Reader
                 indexArea = new IndexArea(data, startIndex);
                 documentArea = new DocumentArea(this);
 
+                int index = Array.FindIndex(indexArea.indexes, i => i.packetType == 94);
+                if (index > 0)
+                {
+                    prefixTimeStamp = new PrefixTimeStamp (this, index);
+                }
                 //writeWPStreamToFile(documentArea.WPStream, URL);
                 //writeMapToFile(WP6_FunctionNames.map);
                 //writeToFile(data);

@@ -187,6 +187,7 @@
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\StartOfDelayedCodes.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\SuppressPageCharacteristics.cs" />
     <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\ParseMergeGroupFunction.cs" />
+    <Compile Include="Document Prefix\PacketTypes\PrefixTimeStamp.cs" />
     <Compile Include="UtilityMethods.cs" />
     <Compile Include="WP_Reader_Enumerations.cs" />
     <Compile Include="DocumentArea.cs" />

@@ -8,6 +8,10 @@ namespace WP_Reader
 {
     public class Footnote_EndnoteFunction:VariableLengthFunction
     {
+        public Footnote_EndnoteFunction()
+        {
+
+        }
         public Footnote_EndnoteFunction(WP6Document doc, int index)
             : base(doc, index)
         {

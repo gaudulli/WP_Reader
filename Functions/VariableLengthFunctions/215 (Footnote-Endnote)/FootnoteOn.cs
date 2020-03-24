@@ -11,6 +11,10 @@ namespace WP_Reader
         public GeneralWPText_Packet footnoteText { get; set; }
 
 
+        public FootnoteOn()
+        {
+
+        }
         public FootnoteOn(WP6Document doc, int index)
             : base(doc, index)
         {

@@ -14,6 +14,11 @@ namespace WP_Reader
         public short matchedFontIndex { get; set; }
         public short matchedPointSizeOfFont { get; set; }
 
+        public FontSizeChange()
+        {
+
+        }
+
         public FontSizeChange(WP6Document doc, int index)
             : base(doc, index)
         {

@@ -8,6 +8,10 @@ namespace WP_Reader
 {
     public class TabFunction:VariableLengthFunction
     {
+        public TabFunction()
+        {
+
+        }
         public TabFunction(WP6Document doc, int index)
             : base(doc, index)
         {

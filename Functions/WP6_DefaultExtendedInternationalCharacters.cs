@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    static class WP6_DefaultExtendedInternationalCharacters
+    public static class WP6_DefaultExtendedInternationalCharacters
     {
         public static Dictionary<WP6_FunctionKey, string> map;
 
-        static WP6_DefaultExtendedInternationalCharacters()
+       static WP6_DefaultExtendedInternationalCharacters()
         {
             map = new Dictionary<WP6_FunctionKey, string>();
 

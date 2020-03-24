@@ -15,6 +15,10 @@ namespace WP_Reader
         public byte[] data { get; set; }    //byte stream of the file
         public PrefixTimeStamp prefixTimeStamp { get; set; }
       
+        public WP6Document()
+        {
+
+        }
 
         public WP6Document(string URL)
         {

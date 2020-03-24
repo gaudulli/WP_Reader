@@ -13,6 +13,10 @@ namespace WP_Reader
         public int systemStyleNumber { get; set; }
 
 
+        public StyleEndOn()
+        {
+
+        }
         public StyleEndOn(WP6Document doc, int index)
             : base(doc, index)
         {

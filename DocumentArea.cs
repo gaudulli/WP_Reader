@@ -20,6 +20,11 @@ namespace WP_Reader
         int length;
         int stop;
 
+        public DocumentArea()
+        {
+
+        }
+
 
         public DocumentArea(WP6Document doc)
         {

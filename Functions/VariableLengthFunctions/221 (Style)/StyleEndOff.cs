@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class StyleEndOff:StyleGroupFunction
     {
+
+        public StyleEndOff()
+        {
+
+        }
           public StyleEndOff(WP6Document doc, int index)
             : base(doc, index)
         {

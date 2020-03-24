@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public GeneralWPText_Packet endnoteText { get; set; }
 
+        public EndNoteOn()
+        {
+
+        }
        public EndNoteOn(WP6Document doc, int index)
             : base(doc, index)
         {

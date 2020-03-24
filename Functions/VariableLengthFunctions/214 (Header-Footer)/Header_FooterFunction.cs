@@ -11,6 +11,11 @@ namespace WP_Reader
         public GeneralWPText_Packet content { get; set; }
         public Header_FooterOccurrence occurrence { get; set; }
 
+        public Header_FooterFunction()
+        {
+
+        }
+
         public Header_FooterFunction(WP6Document doc, int index)
             : base(doc, index)
         {           

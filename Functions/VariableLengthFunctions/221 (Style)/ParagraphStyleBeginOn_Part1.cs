@@ -12,6 +12,11 @@ namespace WP_Reader
         public int hash { get; set; }
         public int systemStyleNumber { get; set; }
 
+        public ParagraphStyleBeginOn_Part1()
+        {
+
+        }
+
 
         public ParagraphStyleBeginOn_Part1(WP6Document doc, int index)
             : base(doc, index)

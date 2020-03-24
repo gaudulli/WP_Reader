@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class NumberingMethodFunction: VariableLengthFunction
     {
+
+        public NumberingMethodFunction()
+        {
+
+        }
         public NumberingMethodFunction(WP6Document doc, int index)
             : base(doc, index)
         {

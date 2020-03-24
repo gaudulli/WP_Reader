@@ -12,6 +12,11 @@ namespace WP_Reader
         public HypertextBookmarkNamePacket bookmarkPID { get; set; }
         public int hypertextAction { get; set; }
 
+        public HypertextBeginOn()
+        {
+
+        }
+
         public HypertextBeginOn(WP6Document doc, int index)
           : base(doc, index)
         {

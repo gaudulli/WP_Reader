@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public bool underlineSpaces { get; set; }
 
+        public SetUnderlineSpacesMode()
+        {
+
+        }
        public SetUnderlineSpacesMode(WP6Document doc, int index)
             : base(doc, index)
         {

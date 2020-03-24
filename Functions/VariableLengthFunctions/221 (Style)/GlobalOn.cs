@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    public class GlobalOn:StyleGroupFunction
+    public class GlobalOn : StyleGroupFunction
     {
         public NormalStylePacket info { get; set; }
         public int hash { get; set; }
@@ -14,6 +14,10 @@ namespace WP_Reader
 
         //maybe include enum listing all the types of styles
 
+        public GlobalOn()
+        {
+
+        }
 
         public GlobalOn(WP6Document doc, int index)
             : base(doc, index)

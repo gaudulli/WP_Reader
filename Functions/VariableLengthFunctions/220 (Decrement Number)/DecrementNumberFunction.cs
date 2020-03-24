@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class DecrementNumberFunction:VariableLengthFunction
     {
+
+        public DecrementNumberFunction()
+        {
+
+        }
         public DecrementNumberFunction(WP6Document doc, int index)
             : base(doc, index)
         {

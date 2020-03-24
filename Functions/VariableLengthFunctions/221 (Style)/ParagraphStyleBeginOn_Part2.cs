@@ -11,6 +11,11 @@ namespace WP_Reader
         public NormalStylePacket info { get; set; }
         public int hash { get; set; }
 
+        public ParagraphStyleBeginOn_Part2()
+        {
+
+        }
+
         public ParagraphStyleBeginOn_Part2(WP6Document doc, int index)
             : base(doc, index)
         {

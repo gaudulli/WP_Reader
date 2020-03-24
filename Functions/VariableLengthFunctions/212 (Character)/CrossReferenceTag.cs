@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public CrossReferenceTagPacket tag { get; set; }
 
+        public CrossReferenceTag()
+        {
+
+        }
        public CrossReferenceTag(WP6Document doc, int index)
             : base(doc, index)
         {

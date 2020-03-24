@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public string listName { get; set; }
 
+        public EndMarkedTextForList()
+        {
+
+        }
+
         public EndMarkedTextForList(WP6Document doc, int index)
             : base(doc, index)
         {

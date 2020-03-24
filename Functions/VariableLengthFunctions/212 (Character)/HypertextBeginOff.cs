@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class HypertextBeginOff : CharacterGroupFunction
     {
+
+        public HypertextBeginOff()
+        {
+
+        }
         /// <summary>
         /// paired function to match HypertextBeiginOn--but has no other real purpose
         /// </summary>

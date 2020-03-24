@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class FormatterFunction:VariableLengthFunction
     {
+
+        public FormatterFunction()
+        {
+
+        }
         public FormatterFunction(WP6Document doc, int index)
             : base(doc, index)
         {

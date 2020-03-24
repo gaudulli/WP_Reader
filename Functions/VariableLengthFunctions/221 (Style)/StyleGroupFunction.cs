@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class StyleGroupFunction :VariableLengthFunction
     {
+        public StyleGroupFunction()
+        {
+
+        }
+
         public StyleGroupFunction(WP6Document doc, int index)
             : base(doc, index)
         {

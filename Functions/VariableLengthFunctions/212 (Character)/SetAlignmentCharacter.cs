@@ -13,6 +13,10 @@ namespace WP_Reader
     {
         public short alignment_decimalCharacter { get; set; }     //not sure if this should be a string...figure out when needed
 
+        public SetAlignmentCharacter()
+        {
+
+        }
         public SetAlignmentCharacter(WP6Document doc, int index)
             : base(doc, index)
         {

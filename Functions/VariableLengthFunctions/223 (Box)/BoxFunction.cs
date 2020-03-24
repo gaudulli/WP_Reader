@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class BoxFunction:VariableLengthFunction
     {
+
+        public BoxFunction()
+        {
+
+        }
         public BoxFunction(WP6Document doc, int index): base (doc, index)
         {
 

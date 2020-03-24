@@ -10,7 +10,10 @@ namespace WP_Reader
     {
         public bool on { get; set; }
 
+        public Kerning_On_Off()
+        {
 
+        }
         public Kerning_On_Off(WP6Document doc, int index)
             : base(doc, index)
         {

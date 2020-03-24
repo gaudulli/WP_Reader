@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class FootnoteOff: Footnote_EndnoteFunction
     {
+
+        public FootnoteOff()
+        {
+
+        }
         public FootnoteOff(WP6Document doc, int index)
             : base(doc, index)
         {

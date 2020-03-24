@@ -12,6 +12,11 @@ namespace WP_Reader
         public int numSpacesBetweenCharacters { get; set; }
 
 
+        public SetDotLeaderCharacters()
+        {
+
+        }
+
         public SetDotLeaderCharacters(WP6Document document, int prefixID) :
             base(document, prefixID)
          {

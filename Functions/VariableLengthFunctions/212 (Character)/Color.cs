@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public RGB_Color color;
 
+
+        public Color()
+        {
+
+        }
         public Color(WP6Document doc, int index)
             : base(doc, index)
         {

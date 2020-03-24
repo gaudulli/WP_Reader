@@ -11,6 +11,10 @@ namespace WP_Reader
         public Language language { get; set; }
 
 
+        public SetLanguage()
+        {
+
+        }
          public SetLanguage(WP6Document doc, int index)
             : base(doc, index)
         {

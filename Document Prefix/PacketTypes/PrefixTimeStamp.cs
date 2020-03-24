@@ -15,6 +15,10 @@ namespace WP_Reader
         public int build { get; set; }
         public string wpVersion { get; set; }
 
+        public PrefixTimeStamp()
+        {
+
+        }
 
         public PrefixTimeStamp(WP6Document document, int prefixID):
             base(document, prefixID)
@@ -39,7 +43,7 @@ namespace WP_Reader
             var month = (date & 0x01e0) >> 5;
             var day = date & 0x1F;
             var hour = time >> 11;
-            hour = hour - 6;    // WordPerfect seems to mis-read the DOS time stamp by 6 hours!!
+            //hour = hour - 6;    // WordPerfect seems to mis-read the DOS time stamp by 6 hours!!
             var minute = (time & 0x07e0) >> 5;
             var second = (time & 0x1F) * 2;
 

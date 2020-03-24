@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public List<DelayedCodesInfo> info;
 
+
+        public StartOfDelayedCodes()
+        {
+
+        }
         public StartOfDelayedCodes(WP6Document doc, int index)
             : base(doc, index)
         {

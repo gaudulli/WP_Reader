@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public string bookmarkName { get; set; }
 
+        public HypertextBookmarkNamePacket()
+        {
+
+        }
         public HypertextBookmarkNamePacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

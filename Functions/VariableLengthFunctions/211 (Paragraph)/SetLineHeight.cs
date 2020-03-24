@@ -14,6 +14,10 @@ namespace WP_Reader
         public short linesPerInch {get; set;}  //measurement in WPUs
         public short? minimumLinesPerInch { get; set; }  //measurement in WPUs
 
+        public SetLineHeight()
+        {
+
+        }
         public SetLineHeight(WP6Document doc, int index)
             : base(doc, index)
         {

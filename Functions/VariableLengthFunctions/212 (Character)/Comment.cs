@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public Comment_AnnotationPacket commentText { get; set; }
 
+        public Comment()
+        {
+
+        }
         public Comment(WP6Document doc, int index)
             : base(doc, index)
         {

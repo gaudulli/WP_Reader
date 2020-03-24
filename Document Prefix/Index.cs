@@ -12,7 +12,10 @@ namespace WP_Reader {
         public int sizeOfDataPacket { get; set; }
         public int dataPacketPointer { get; set; }
 
+        public Index()
+        {
 
+        }
         public Index(byte[] data, int startIndex) {
             parseIndex(data, startIndex);
         }

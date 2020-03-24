@@ -28,7 +28,10 @@ namespace WP_Reader
         private WP6Document _document;
 
 
+        public NormalStylePacket()
+        {
 
+        }
         public NormalStylePacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {

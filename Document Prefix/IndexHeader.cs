@@ -9,6 +9,11 @@ namespace WP_Reader {
         public byte flags { get; set; }
         public int indexCount { get; set; }
 
+
+        public IndexHeader()
+        {
+
+        }
         public IndexHeader(byte[] data, int startIndex)
         {
             parseIndexHeader(data, startIndex);

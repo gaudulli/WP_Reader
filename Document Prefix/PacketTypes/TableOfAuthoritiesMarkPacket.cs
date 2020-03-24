@@ -12,6 +12,10 @@ namespace WP_Reader
         public string shortFormName { get; set; }
         public string TOASectionName {get; set;}
 
+        public TableOfAuthoritiesMarkPacket()
+        {
+
+        }
         public TableOfAuthoritiesMarkPacket(WP6Document document, int prefixID): 
             base (document, prefixID)
         {

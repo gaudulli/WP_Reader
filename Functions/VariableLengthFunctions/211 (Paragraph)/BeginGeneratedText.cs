@@ -11,7 +11,10 @@ namespace WP_Reader
 
      public int sizeOfGenerateTable { get; set; }
 
+    public BeginGeneratedText()
+        {
 
+        }
      public BeginGeneratedText(WP6Document doc, int index)
             : base(doc, index)
         {

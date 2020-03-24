@@ -21,5 +21,10 @@ namespace WP_Reader
             // No special coding needed yet for EOL functions
         }
 
+        public EOLFunction()
+        {
+
+        }
+
     }
 }

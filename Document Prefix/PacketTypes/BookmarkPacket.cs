@@ -11,6 +11,10 @@ namespace WP_Reader
         public string bookmarkName { get; set; }
         public BookmarkDataFlags flags { get; set; }
 
+        public BookmarkPacket()
+        {
+
+        }
         public BookmarkPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

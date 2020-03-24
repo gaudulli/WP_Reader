@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public UndoType undoType { get; set; }
 
+
+        public Undo()
+        {
+
+        }
         public Undo(WP6Document doc, int index, int size)
             : base(doc, index, size)
         {

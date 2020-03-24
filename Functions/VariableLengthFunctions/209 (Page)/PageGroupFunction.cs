@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class PageGroupFunction:VariableLengthFunction
     {
+
+        public PageGroupFunction()
+        {
+
+        }
         public PageGroupFunction(WP6Document doc, int index)
             : base(doc, index)
         {

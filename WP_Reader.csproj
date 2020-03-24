@@ -69,7 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FieldOff.cs" />
+    <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\FieldOff.cs" />
     <Compile Include="Functions\VariableLengthFunctions\222 %28Merge%29\FieldOn.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\EndOfDelayedCodes.cs" />
     <Compile Include="Functions\VariableLengthFunctions\209 %28Page%29\DelayedCodes.cs" />

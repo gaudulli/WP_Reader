@@ -8,6 +8,10 @@ namespace WP_Reader
 {
     public class CharacterGroupFunction : VariableLengthFunction
     {
+        public CharacterGroupFunction()
+        {
+
+        }
         public CharacterGroupFunction(WP6Document doc, int index)
             : base(doc, index)
         {

@@ -12,7 +12,10 @@ namespace WP_Reader
         public string filename { get; set; }
         public short[] childIDTag { get; set; }
 
+        public NativeFileNamePacket()
+        {
 
+        }
         public NativeFileNamePacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {

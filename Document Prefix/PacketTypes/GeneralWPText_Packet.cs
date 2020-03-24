@@ -12,7 +12,10 @@ namespace WP_Reader
     {
         public DocumentArea[] packetText { get; set; }
 
+        public GeneralWPText_Packet()
+        {
 
+        }
         public GeneralWPText_Packet(WP6Document document, int prefixID): 
             base (document, prefixID)
         {

@@ -20,6 +20,10 @@ namespace WP_Reader
         protected byte[] _data;
         protected int dataIndex;
 
+        public PacketData()
+        {
+
+        }
 
         public PacketData(WP6Document document, int prefixID)
         {

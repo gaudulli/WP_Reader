@@ -13,7 +13,10 @@ namespace WP_Reader
         public int blueValue { get; set; }
         public int percentShading { get; set; }
 
+        public HighlightOn()
+        {
 
+        }
         public HighlightOn(WP6Document doc, int index, int size)
             : base(doc, index, size)
         {

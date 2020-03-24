@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public short topMargin { get; set; }  //measurement in WPUs
     
+        public TopMarginSet()
+        {
+
+        }
         public TopMarginSet(WP6Document doc, int index)
             : base(doc, index)
         {

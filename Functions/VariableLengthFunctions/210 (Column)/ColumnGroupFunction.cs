@@ -13,5 +13,10 @@ namespace WP_Reader
         {
 
         }
+
+        public ColumnGroupFunction()
+        {
+
+        }
     }
 }

@@ -13,6 +13,10 @@ namespace WP_Reader
         public string heading { get; set; }
         public string subheading { get; set; }
 
+        public IndexMarkPacket()
+        {
+
+        }
         public IndexMarkPacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {

@@ -15,7 +15,10 @@ namespace WP_Reader
         public string userInitials { get; set; }
         public string userName { get; set; }
         
+        public Comment_AnnotationPacket()
+        {
 
+        }
         public Comment_AnnotationPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

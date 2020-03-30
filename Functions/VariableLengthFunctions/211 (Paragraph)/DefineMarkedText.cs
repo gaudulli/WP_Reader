@@ -12,6 +12,10 @@ namespace WP_Reader
         public MarkedTextType markedTextType { get; set; }
 
 
+        public DefineMarkedText()
+        {
+
+        }
        public DefineMarkedText(WP6Document doc, int index)
             : base(doc, index)
         {

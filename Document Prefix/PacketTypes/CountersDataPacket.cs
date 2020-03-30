@@ -14,6 +14,10 @@ namespace WP_Reader
         public int[] defaultNumberingMethodForLevel { get; set; }
         public string[] levelName { get; set; }
 
+        public CountersDataPacket()
+        {
+
+        }
         public CountersDataPacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {

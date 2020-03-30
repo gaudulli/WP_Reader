@@ -18,6 +18,10 @@ namespace WP_Reader
 
         private WP6Document _document;
 
+        public MarkTextForGenerateDefinitionPacket()
+        {
+
+        }
         public MarkTextForGenerateDefinitionPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

@@ -14,7 +14,10 @@ namespace WP_Reader
         public columnInfo[] columnInformation { get; set; }
 
 
+        public DefineTextColumns()
+        {
 
+        }
         public DefineTextColumns(WP6Document doc, int index)
             : base(doc, index)
         {

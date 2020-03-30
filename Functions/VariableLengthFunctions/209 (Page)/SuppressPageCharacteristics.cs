@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public SuppressPageCharacteristicsEnum characteristic { get; set; }
 
+
+        public SuppressPageCharacteristics()
+        {
+
+        }
         public SuppressPageCharacteristics(WP6Document doc, int index)
             : base(doc, index)
         {

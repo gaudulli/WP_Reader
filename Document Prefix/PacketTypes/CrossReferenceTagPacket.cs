@@ -11,6 +11,10 @@ namespace WP_Reader
 
         public string targetname{get; set;}
 
+        public CrossReferenceTagPacket()
+        {
+
+        }
       public CrossReferenceTagPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

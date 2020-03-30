@@ -12,7 +12,10 @@ namespace WP_Reader
         public IndexHeader indexHeader { get; set; }
         public Index[] indexes { get; set; }
 
+        public IndexArea()
+        {
 
+        }
         public IndexArea(byte[] data, int startIndex)
         {
             indexHeader = new IndexHeader(data, startIndex);

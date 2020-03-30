@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public string pageNumberFormatString { get; set; }
 
+        public PageNumberFormatStringPacket()
+        {
+
+        }
         public PageNumberFormatStringPacket(WP6Document document, int prefixID) :
             base(document, prefixID)
         {

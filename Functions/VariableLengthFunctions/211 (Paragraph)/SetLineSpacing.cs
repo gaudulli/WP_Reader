@@ -11,6 +11,11 @@ namespace WP_Reader
 
         public double lineSpacing { get; set; }
 
+
+        public SetLineSpacing()
+        {
+
+        }
         public SetLineSpacing(WP6Document doc, int index)
             : base(doc, index)
         {

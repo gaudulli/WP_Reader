@@ -30,6 +30,10 @@ namespace WP_Reader
 
 
 
+        public FontTypefaceDescriptorPoolPacket()
+        {
+
+        }
         public FontTypefaceDescriptorPoolPacket(WP6Document document, int prefixID):
             base(document, prefixID)
         {

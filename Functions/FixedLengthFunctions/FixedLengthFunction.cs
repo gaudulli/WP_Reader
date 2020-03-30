@@ -16,7 +16,6 @@ namespace WP_Reader
         private int _index;
         private byte[] _data;
 
-
         public FixedLengthFunction(WP6Document doc, int index, int size)
         {
             this.size = size;

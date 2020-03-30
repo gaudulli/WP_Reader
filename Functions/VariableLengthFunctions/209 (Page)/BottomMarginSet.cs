@@ -11,6 +11,11 @@ namespace WP_Reader
 
        public short bottomMargin {get; set;}  //measurement in WPUs
 
+
+        public BottomMarginSet()
+        {
+
+        }
        public BottomMarginSet(WP6Document doc, int index)
             : base(doc, index)
         {

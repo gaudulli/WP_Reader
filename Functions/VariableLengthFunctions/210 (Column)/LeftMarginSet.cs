@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public short leftMargin {get; set;}  //measurement in WPUs
 
+
+        public LeftMarginSet()
+        {
+
+        }
         public LeftMarginSet(WP6Document doc, int index)
             : base(doc, index)
         {

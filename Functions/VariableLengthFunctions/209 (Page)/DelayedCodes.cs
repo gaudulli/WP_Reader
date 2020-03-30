@@ -13,6 +13,11 @@ namespace WP_Reader
 
         public GeneralWPText_Packet codes;
 
+
+        public DelayedCodes()
+        {
+
+        }
         public DelayedCodes(WP6Document doc, int index)
             : base(doc, index)
         {

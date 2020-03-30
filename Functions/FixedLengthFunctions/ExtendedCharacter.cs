@@ -13,7 +13,10 @@ namespace WP_Reader
         public WP6_Character_Sets charset { get; set; }
         public int charNumber { get; set; }
 
-        
+        public ExtendedCharacter()
+        {
+
+        }
 
         public ExtendedCharacter(WP6Document doc, int index, int size)
             : base(doc, index, size)

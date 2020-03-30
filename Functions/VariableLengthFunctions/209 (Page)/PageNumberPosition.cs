@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WP_Reader
 {
-    public class PageNumberPosition: PageGroupFunction
+    public class PageNumberPosition : PageGroupFunction
     {
         public FontTypefaceDescriptorPoolPacket fontID { get; set; }
         public short fontHash { get; set; }
@@ -22,7 +22,11 @@ namespace WP_Reader
         public RGBS_Color color;
         public short pageNumberHeight { get; set; }
         public PageNumberPositionEnum NewPagePositionOverride { get; set; }
-        
+
+        public PageNumberPosition()
+        {
+
+        }
 
         public PageNumberPosition(WP6Document doc, int index)
             : base(doc, index)

@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public WPAttribute attribute { get; set; }
 
+        public AttributeOff()
+        {
+
+        }
         public AttributeOff(WP6Document doc, int index, int size)
             : base(doc, index, size)
         {

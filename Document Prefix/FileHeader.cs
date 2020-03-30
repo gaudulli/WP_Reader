@@ -16,6 +16,10 @@ namespace WP_Reader {
         public int fileSize { get; set; }
 
 
+        public FileHeader()
+        {
+
+        }
         public FileHeader(byte[] data) {
             parseFileHeader(data);
         }

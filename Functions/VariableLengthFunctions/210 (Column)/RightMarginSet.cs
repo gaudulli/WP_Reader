@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public short rightMargin {get; set;}  //measurement in WPUs
 
+
+        public RightMarginSet()
+        {
+
+        }
         public RightMarginSet(WP6Document doc, int index)
             : base(doc, index)
         {

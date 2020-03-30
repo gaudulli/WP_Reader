@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public string separator { get; set; }
 
+        public SetThousandsSeparatorCharacter()
+        {
+
+        }
         public SetThousandsSeparatorCharacter(WP6Document doc, int index)
             : base(doc, index)
         {

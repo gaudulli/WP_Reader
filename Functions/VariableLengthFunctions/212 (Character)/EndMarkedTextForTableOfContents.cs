@@ -12,6 +12,11 @@ namespace WP_Reader
         public int level { get; set; }
         public string ToCName { get; set; }
 
+        public EndMarkedTextForTableOfContents()
+        {
+
+        }
+
         public EndMarkedTextForTableOfContents(WP6Document doc, int index)
             : base(doc, index)
         {

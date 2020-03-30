@@ -12,6 +12,10 @@ namespace WP_Reader
         TableOfAuthoritiesMarkPacket TOAPacket { get; set; }
         public string shortFormName { get; set; }
 
+        public TableOfAuthorityEntry()
+        {
+
+        }
        public TableOfAuthorityEntry(WP6Document doc, int index)
             : base(doc, index)
         {

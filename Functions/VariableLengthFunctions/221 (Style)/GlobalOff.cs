@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class GlobalOff:StyleGroupFunction
     {
+
+        public GlobalOff()
+        {
+
+        }
         public GlobalOff(WP6Document doc, int index)
             : base(doc, index)
         {

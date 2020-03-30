@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class EndOfDate: CharacterGroupFunction
     {
+
+        public EndOfDate()
+        {
+
+        }
         public EndOfDate(WP6Document doc, int index)
             : base(doc, index)
         {

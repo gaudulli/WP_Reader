@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class ParagraphStyleBeginOff_Part1:StyleGroupFunction
     {
+
+        public ParagraphStyleBeginOff_Part1()
+        {
+
+        }
           public ParagraphStyleBeginOff_Part1(WP6Document doc, int index)
             : base(doc, index)
         {

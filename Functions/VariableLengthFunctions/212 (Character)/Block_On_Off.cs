@@ -11,6 +11,11 @@ namespace WP_Reader
 
         public bool on { get; set; }
 
+        public Block_On_Off()
+        {
+
+        }
+
         public Block_On_Off(WP6Document doc, int index)
             : base(doc, index)
         {

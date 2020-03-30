@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class SingleByteFunction: Function
     {
+
+        public SingleByteFunction()
+        {
+
+        }
         public SingleByteFunction(byte[] data, int index)
         {
             _startIndex = index;

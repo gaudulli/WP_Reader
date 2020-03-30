@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class ParagraphStyleEndOff: StyleGroupFunction
     {
+
+        public ParagraphStyleEndOff()
+        {
+
+        }
          public ParagraphStyleEndOff(WP6Document doc, int index)
             : base(doc, index)
         {

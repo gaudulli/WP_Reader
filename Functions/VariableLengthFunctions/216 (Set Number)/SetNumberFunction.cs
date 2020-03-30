@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class SetNumberFunction:VariableLengthFunction
     {
+
+        public SetNumberFunction()
+        {
+
+        }
         public SetNumberFunction(WP6Document doc, int index)
             : base(doc, index)
         {

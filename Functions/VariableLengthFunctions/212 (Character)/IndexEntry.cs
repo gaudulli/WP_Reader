@@ -9,6 +9,11 @@ namespace WP_Reader
     public class IndexEntry: CharacterGroupFunction
     {
         public IndexMarkPacket indexMark { get; set; }
+        
+        public IndexEntry()
+        {
+
+        }
 
         public IndexEntry(WP6Document doc, int index)
             : base(doc, index)

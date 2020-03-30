@@ -12,6 +12,10 @@ namespace WP_Reader
       public bool absolute { get; set; }
       public short adjustment { get; set; }
 
+        public VerticalAdvanceTo_PagePosition()
+        {
+
+        }
       public VerticalAdvanceTo_PagePosition(WP6Document doc, int index)
             : base(doc, index)
         {

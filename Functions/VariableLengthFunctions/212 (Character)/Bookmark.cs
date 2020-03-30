@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public BookmarkPacket info { get; set; }
 
+        public Bookmark()
+        {
+
+        }
+
         public Bookmark(WP6Document doc, int index)
             : base(doc, index)
         {

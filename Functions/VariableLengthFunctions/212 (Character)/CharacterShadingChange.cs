@@ -10,6 +10,11 @@ namespace WP_Reader
     {
         public int newShading { get; set; }
 
+        public CharacterShadingChange()
+        {
+
+        }
+
         public CharacterShadingChange(WP6Document doc, int index)
             : base(doc, index)
         {

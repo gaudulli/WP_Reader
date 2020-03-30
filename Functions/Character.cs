@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public string content { get; set; }     // some unicode characters have more than one char value
 
+        public Character()
+        {
+
+        }
         public Character(byte[] data, int index)
         {
             functionGroup = functionGroups.textCharacter;

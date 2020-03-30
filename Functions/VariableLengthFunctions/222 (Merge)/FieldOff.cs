@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class FieldOff:MergeGroupFunction
     {
+
+        public FieldOff()
+        {
+
+        }
         public FieldOff(WP6Document doc, int index)
             : base(doc, index)
         {

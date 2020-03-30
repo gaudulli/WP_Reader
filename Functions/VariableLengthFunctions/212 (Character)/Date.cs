@@ -9,6 +9,10 @@ namespace WP_Reader
     public class Date : CharacterGroupFunction
     {
 
+        public Date()
+        {
+
+        }
         public Date(WP6Document doc, int index)
             : base(doc, index)
         {

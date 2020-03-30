@@ -10,6 +10,10 @@ namespace WP_Reader
     {
         public int linesNotToBeBroken { get; set; }
 
+        public ConditionalEndOfPage()
+        {
+
+        }
         public ConditionalEndOfPage(WP6Document doc, int index)
             : base(doc, index)
         {

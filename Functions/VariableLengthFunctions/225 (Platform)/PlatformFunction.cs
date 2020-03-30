@@ -8,6 +8,11 @@ namespace WP_Reader
 {
     public class PlatformFunction:VariableLengthFunction
     {
+
+        public PlatformFunction()
+        {
+
+        }
         public PlatformFunction(WP6Document doc, int index)
             : base(doc, index)
         {

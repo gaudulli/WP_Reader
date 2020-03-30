@@ -11,6 +11,10 @@ namespace WP_Reader
 
        public bool underlineTabs { get; set; }
 
+        public SetUnderlineTabsMode()
+        {
+
+        }
        public SetUnderlineTabsMode(WP6Document doc, int index)
             : base(doc, index)
         {

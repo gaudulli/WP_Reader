@@ -15,6 +15,11 @@ namespace WP_Reader
         public bool hiddenByHideSelection { get; set; }
         public int levelNumberAtTimeOfHide { get; set; }
 
+
+        public BeginHiddenText()
+        {
+
+        }
         public BeginHiddenText(WP6Document doc, int index)
             : base(doc, index)
         {

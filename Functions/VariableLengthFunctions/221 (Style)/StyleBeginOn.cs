@@ -13,6 +13,11 @@ namespace WP_Reader
         public int hash { get; set; }
         public int systemStyleNumber { get; set; }
 
+        public StyleBeginOn()
+        {
+
+        }
+
 
         public StyleBeginOn(WP6Document doc, int index)
             : base(doc, index)

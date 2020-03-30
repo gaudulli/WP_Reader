@@ -8,6 +8,10 @@ namespace WP_Reader
 {
     public class HypertextEndOn : CharacterGroupFunction
     {
+        public HypertextEndOn()
+        {
+             
+        }
         public HypertextEndOn(WP6Document doc, int index)
             : base(doc, index)
         {
